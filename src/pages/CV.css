@@ -1,3 +1,8 @@
+@media print {
+  .overlay-profile-image {
+    display: none !important;
+  }
+}
 .cv-container {
   max-width: 1300px;
   margin: 0 auto;
