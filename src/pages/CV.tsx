@@ -12,7 +12,7 @@ const CV = () => {
         </div>
       </div>
       <div className="pdf-only-header">
-        <img src={profileImage} alt="Esko Matias Taivassalo" className="pdf-profile-image" />
+        <img src={profileImage} alt="Esko Taivassalo" className="pdf-profile-image" />
         <div className="pdf-header-info">
           <h1>Esko Matias Taivassalo</h1>
           <p className="pdf-title">Ohjelmistokehittäjä</p>
