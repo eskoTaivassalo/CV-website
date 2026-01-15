@@ -39,6 +39,20 @@ const Projektit = () => {
       ],
       github: 'https://github.com/eskoTaivassalo/EPQ',
       live: null
+    },
+    {
+      id: 'cvwebsite',
+      name: 'CV-website',
+      description: 'Moderni CV-sivusto, joka esittelee minun taustaa, harrastuksia ja projekteja. Toteutettu Reactilla ja TypeScriptillä responsiivisella designilla.',
+      technologies: ['React', 'TypeScript', 'Vite', 'CSS'],
+      details: [
+        'Responsiivinen design joka toimii kaikilla laitteilla',
+        'Modaalit harrastuksien yksityiskohtaisille kuvauksille',
+        'Interaktiivinen projektikokoelma GitHub-linkeillä',
+        'Modernia CSS-tyylitystä ja käyttäjäystävällistä käyttöliittymää'
+      ],
+      github: 'https://github.com/eskoTaivassalo/CV-website',
+      live: null
     }
   ];
 
