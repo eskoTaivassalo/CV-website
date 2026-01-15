@@ -1,8 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import './Header.css';
-import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
+import './Header.css';
 
 const Header = () => {
   const location = useLocation();
@@ -12,37 +12,35 @@ const Header = () => {
   const handleDownloadPDF = async () => {
     setIsGeneratingPDF(true);
     try {
-      const cvElement = document.querySelector('.cv-container') as HTMLElement;
-      if (!cvElement) return;
+      // Otetaan kuvakaappaus koko sivusta, jotta fixed-elementit (profiilikuva) tulevat mukaan
+      const element = document.body;
 
-      // Piilotetaan lataa-painike PDF:ssä
-      const downloadBtn = document.querySelector('.download-btn') as HTMLElement;
-      if (downloadBtn) downloadBtn.style.display = 'none';
-
-      const canvas = await html2canvas(cvElement, {
-        scale: 2,
+      const canvas = await html2canvas(element, {
+        scale: 1.5,
         useCORS: true,
         logging: false,
+        backgroundColor: '#ffffff',
+        windowWidth: 1300, // CV:n leveys
+        windowHeight: element.scrollHeight,
       });
 
-      // Näytetään painike takaisin
-      if (downloadBtn) downloadBtn.style.display = 'flex';
+      const imgData = canvas.toDataURL('image/jpeg', 0.7);
+      
+      const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'mm',
+        format: 'a4',
+        compress: true
+      });
 
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-      const imgWidth = canvas.width;
-      const imgHeight = canvas.height;
-      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
-      const imgX = (pdfWidth - imgWidth * ratio) / 2;
-      const imgY = 0;
-
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio);
+      const imgWidth = 210;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      
+      pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight, undefined, 'FAST');
       pdf.save('Esko_Taivassalo_CV.pdf');
     } catch (error) {
-      console.error('Virhe PDF:n luonnissa:', error);
-      alert('PDF:n luonti epäonnistui. Yritä uudelleen.');
+      console.error('Virhe:', error);
+      alert('PDF:n luonti epäonnistui.');
     } finally {
       setIsGeneratingPDF(false);
     }

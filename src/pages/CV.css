@@ -1,6 +1,29 @@
 @media print {
-  .overlay-profile-image {
+  /* Poistetaan taustat ja gradientit tulostettaessa */
+  .cv-container {
+    background: white !important;
+  }
+  
+  .cv-header {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #333 !important;
+  }
+  
+  .skill-tag {
+    background: #ddd !important;
+    color: black !important;
+  }
+  
+  /* Piilotetaan lataa-painike */
+  .download-btn,
+  .download-btn-top {
     display: none !important;
+  }
+  
+  /* Vältetään sivunvaihtoja keskellä elementtejä */
+  .cv-section {
+    page-break-inside: avoid;
   }
 }
 .cv-container {
