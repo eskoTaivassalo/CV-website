@@ -23,7 +23,7 @@ const CV = () => {
           <section className="cv-section">
             <h2>Henkilötiedot</h2>
             <div className="contact-info">
-              <p><strong>Nimi:</strong> Esko Matias Taivassalo</p>
+              <p><strong>Nimi:</strong> Esko Taivassalo</p>
               <p><strong>Osoite:</strong> Kauppakuja 4, 47200 Kouvola</p>
               <p><strong>Puhelin:</strong> 0413172320</p>
               <p><strong>Sähköposti:</strong> esko.taivassalo@gmail.com</p>
