@@ -7,14 +7,14 @@ const CV = () => {
       <div className="profile-overlay">
         <img src={profileImage} alt="Esko Taivassalo" className="overlay-profile-image" />
         <div className="overlay-info">
-          <h1 className="overlay-name">Esko Matias Taivassalo</h1>
+          <h1 className="overlay-name">Esko  Taivassalo</h1>
           <p className="overlay-title">Ohjelmistokehittäjä</p>
         </div>
       </div>
       <div className="pdf-only-header">
         <img src={profileImage} alt="Esko Taivassalo" className="pdf-profile-image" />
         <div className="pdf-header-info">
-          <h1>Esko Matias Taivassalo</h1>
+          <h1>Esko  Taivassalo</h1>
           <p className="pdf-title">Ohjelmistokehittäjä</p>
         </div>
       </div>
