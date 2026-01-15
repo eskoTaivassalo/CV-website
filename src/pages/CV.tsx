@@ -5,7 +5,7 @@ const CV = () => {
   return (
     <div className="cv-container">
       <div className="profile-overlay">
-        <img src={profileImage} alt="Esko Matias Taivassalo" className="overlay-profile-image" />
+        <img src={profileImage} alt="Esko Taivassalo" className="overlay-profile-image" />
         <div className="overlay-info">
           <h1 className="overlay-name">Esko Matias Taivassalo</h1>
           <p className="overlay-title">Ohjelmistokehittäjä</p>
