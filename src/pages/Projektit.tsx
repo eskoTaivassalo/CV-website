@@ -1,6 +1,8 @@
+import { useLanguage } from '../context/LanguageContext';
 import './Projektit.css';
 
 const Projektit = () => {
+  const { t } = useLanguage();
   const projects = [
     {
       id: 'region',
@@ -58,7 +60,7 @@ const Projektit = () => {
 
   return (
     <div className="page-container">
-      <h1 className="page-title">Projektit</h1>
+      <h1 className="page-title">{t('projects.title')}</h1>
       
       <div className="projects-container">
         {projects.map((project, index) => (
@@ -88,7 +90,7 @@ const Projektit = () => {
                   rel="noopener noreferrer" 
                   className="project-link github-link"
                 >
-                  <span>GitHub</span> →
+                  <span>{t('projects.github')}</span> →
                 </a>
               )}
               {project.live && (
@@ -98,7 +100,7 @@ const Projektit = () => {
                   rel="noopener noreferrer" 
                   className="project-link live-link"
                 >
-                  <span>Avaa projekti</span> →
+                  <span>{t('projects.liveDemo')}</span> →
                 </a>
               )}
             </div>

@@ -14,6 +14,28 @@
   top: 1rem;
 }
 
+.language-btn {
+  position: absolute;
+  right: 11rem;
+  top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.language-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
 .header:hover {
   background: linear-gradient(to right, #a8b5c7, #3a3a3a);
 }

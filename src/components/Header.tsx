@@ -2,10 +2,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+import { useLanguage } from '../context/LanguageContext';
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
+  const { language, setLanguage, t } = useLanguage();
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,6 +61,15 @@ const Header = () => {
         <span></span>
         <span></span>
       </button>
+      
+      <button 
+        className="language-btn"
+        onClick={() => setLanguage(language === 'fi' ? 'en' : 'fi')}
+        aria-label="Change language"
+      >
+        {language === 'fi' ? '🇬🇧 EN' : '🇫🇮 FI'}
+      </button>
+      
       {isCV ? (
         <>
           <button 
@@ -66,21 +77,21 @@ const Header = () => {
             className="download-btn download-btn-top"
             disabled={isGeneratingPDF}
           >
-            {isGeneratingPDF ? 'Luodaan PDF...' : '📄 Lataa CV'}
+            {isGeneratingPDF ? t('btn.generating') : t('btn.downloadCV')}
           </button>
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>CV</Link>
-            <Link to="/biografia" className="nav-link" onClick={() => setIsMenuOpen(false)}>Biografia</Link>
-            <Link to="/harrastukset" className="nav-link" onClick={() => setIsMenuOpen(false)}>Harrastukset</Link>
-            <Link to="/projektit" className="nav-link" onClick={() => setIsMenuOpen(false)}>Projektit</Link>
+            <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.cv')}</Link>
+            <Link to="/biografia" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.bio')}</Link>
+            <Link to="/harrastukset" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.hobbies')}</Link>
+            <Link to="/projektit" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.projects')}</Link>
           </nav>
         </>
       ) : (
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-          <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>CV</Link>
-          <Link to="/biografia" className="nav-link" onClick={() => setIsMenuOpen(false)}>Biografia</Link>
-          <Link to="/harrastukset" className="nav-link" onClick={() => setIsMenuOpen(false)}>Harrastukset</Link>
-          <Link to="/projektit" className="nav-link" onClick={() => setIsMenuOpen(false)}>Projektit</Link>
+          <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.cv')}</Link>
+          <Link to="/biografia" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.bio')}</Link>
+          <Link to="/harrastukset" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.hobbies')}</Link>
+          <Link to="/projektit" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t('nav.projects')}</Link>
         </nav>
       )}
     </header>
