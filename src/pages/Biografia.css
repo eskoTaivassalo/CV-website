@@ -2,12 +2,12 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 1rem;
-  background: #f5f5f5;
+  background: #e5e3df;
   min-height: 100vh;
   position: relative;
   padding-top: 4rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  color: #2d2d2d;
 }
 
 .biografia-content-wrapper {
@@ -27,7 +27,7 @@
 }
 
 .bio-section {
-  background: white;
+  background: #f5f3ef;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);

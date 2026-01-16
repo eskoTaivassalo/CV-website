@@ -3,6 +3,7 @@ import { useState } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { useLanguage } from '../context/LanguageContext';
+import profileImage from '../assets/esko.png';
 import './Header.css';
 
 const Header = () => {
@@ -51,7 +52,16 @@ const Header = () => {
   const isCV = location.pathname === '/';
 
   return (
-    <header className="header">
+    <>
+      <div className="profile-overlay">
+        <img src={profileImage} alt="Esko Taivassalo" className="overlay-profile-image" />
+        <div className="overlay-info">
+          <h1 className="overlay-name">Esko Taivassalo</h1>
+          <p className="overlay-title">{t('cv.jobTitle')}</p>
+        </div>
+      </div>
+      
+      <header className="header">
       <button 
         className="hamburger-btn"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -67,7 +77,7 @@ const Header = () => {
         onClick={() => setLanguage(language === 'fi' ? 'en' : 'fi')}
         aria-label="Change language"
       >
-        {language === 'fi' ? '🇬🇧 EN' : '🇫🇮 FI'}
+        {language === 'fi' ? 'EN' : 'FI'}
       </button>
       
       {isCV ? (
@@ -95,6 +105,7 @@ const Header = () => {
         </nav>
       )}
     </header>
+    </>
   );
 };
 

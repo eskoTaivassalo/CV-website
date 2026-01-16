@@ -8,6 +8,56 @@
   transition: background 1.5s ease;
 }
 
+.profile-overlay {
+  position: fixed;
+  top: 3.8rem;
+  left: 11rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  z-index: 150;
+}
+
+.overlay-profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  margin-top: -1.5rem;
+}
+
+.overlay-info {
+  display: flex;
+  flex-direction: column;
+  background: rgba(139, 155, 179, 0.25);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -1rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.overlay-name {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #2d2d2d;
+  line-height: 1.2;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.overlay-title {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #3a3a3a;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
 .download-btn-top {
   position: absolute;
   right: 2rem;
@@ -214,5 +264,25 @@
   .nav-link {
     width: 100%;
     text-align: center;
+  }
+
+  .profile-overlay {
+    top: 6rem;
+  }
+
+  .language-btn {
+    position: fixed;
+    right: 5rem;
+    top: 1rem;
+    z-index: 250;
+    background: rgba(26, 26, 26, 0.6);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .language-btn:hover {
+    background: rgba(26, 26, 26, 0.8);
   }
 }

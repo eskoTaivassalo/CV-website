@@ -1,5 +1,4 @@
 import './CV.css';
-import profileImage from '../assets/esko.png';
 import { useLanguage } from '../context/LanguageContext';
 
 const CV = () => {
@@ -7,13 +6,6 @@ const CV = () => {
   
   return (
     <div className="cv-container">
-      <div className="profile-overlay">
-        <img src={profileImage} alt="Esko Taivassalo" className="overlay-profile-image" />
-        <div className="overlay-info">
-          <h1 className="overlay-name">Esko  Taivassalo</h1>
-          <p className="overlay-title">{t('cv.jobTitle')}</p>
-        </div>
-      </div>
       <div className="pdf-only-header">
         <div className="pdf-header-info">
           <h1>Esko  Taivassalo</h1>
@@ -65,99 +57,6 @@ const CV = () => {
             </p>
           </section>
 
-          <section className="cv-section">
-            <h2>{t('cv.skills')}</h2>
-        <div className="skills-list">
-          <div className="skill-item">
-            <span className="skill-name">Python</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">JavaScript</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">TypeScript</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">C#</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">Web-teknologiat: React, HTML, CSS, Bootstrap</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">Mobiilikehitys: React Native, .NET MAUI</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">Firebase, Node.js, Azure</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-          <div className="skill-item">
-            <span className="skill-name">Git, versionhallinta, tietoturvan perusteet</span>
-            <div className="skill-level">
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-              <span className="dot filled"></span>
-            </div>
-          </div>
-        </div>
-          </section>
-
-          <section className="cv-section">
-            <h2>{t('cv.references')}</h2>
-            <p>{t('cv.referencesText')}</p>
-          </section>
-        </main>
-
-        <aside className="cv-right-sidebar">
           <section className="cv-section">
             <h2>{t('cv.education')}</h2>
             
@@ -213,7 +112,7 @@ const CV = () => {
               <p className="period">{t('cv.work3.period')}</p>
             </div>
           </section>
-        </aside>
+        </main>
       </div>
     </div>
   );

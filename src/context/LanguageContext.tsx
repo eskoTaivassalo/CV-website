@@ -127,15 +127,15 @@ const translations: Record<Language, Record<string, string>> = {
     // Harrastukset
     'hobbies.title': 'Harrastukset',
     'hobbies.coding': 'Koodaus',
-    'hobbies.codingDesc': 'Vapaa-ajalla tykkään kokeilla uusia teknologioita ja kehittää omia projekteja. Open source -projektit kiinnostavat erityisesti.',
+    'hobbies.codingDesc': 'Vapaa-ajalla tykkään kokeilla uusia teknologioita ja kehittää omia projekteja. Muun tekemisen puutteessa opiskelen mm. Udemy-alustan kautta koodaamista. Open source -projektit kiinnostavat erityisesti.',
     'hobbies.gaming': 'Pelaaminen',
-    'hobbies.gamingDesc': 'Pelaan mielellään erilaisia pelejä, erityisesti strategiapelit ja RPG:t. Pelit ovat myös inspiraation lähde omille projekteille.',
+    'hobbies.gamingDesc': 'Pelaan mielellään erilaisia pelejä, erityisesti räiskintä-, urheilu- ja autopelejä. Pelit ovat myös inspiraation lähde omille projekteille.',
     'hobbies.sports': 'Urheilu',
-    'hobbies.sportsDesc': 'Pidän huolta kunnostani urheilemalla säännöllisesti. Se auttaa myös pitämään mielen kirkkaana koodausta varten.',
+    'hobbies.sportsDesc': 'Hyötyliikkuja: syksyisin marjastan, ympäri vuoden koiralenkit ja lisäksi kuntosalia 1-3 kertaa viikossa. Liikunta auttaa pitämään mielen kirkkaana koodausta varten.',
     'hobbies.reading': 'Lukeminen',
     'hobbies.readingDesc': 'Luen paljon teknisiä kirjoja ja artikkeleja. Oppiminen on jatkuva prosessi ja pidän itseni ajan tasalla uusimmista trendeistä.',
     'hobbies.music': 'Musiikki',
-    'hobbies.musicDesc': 'Musiikki auttaa keskittymään koodauksessa. Tykkään kuunnella erilaisia genrejä taustalle koodaillessa.',
+    'hobbies.musicDesc': 'Intohimoinen musiikin harrastaja. Soitan useita instrumentteja, laulan ja teen omia biisejä. Musiikkia kuuntelen lähes jatkuvasti, ja omaa musiikkia löytyy YouTubesta.',
     
     // Harrastukset - modaalit
     'hobbies.modal.coding.title': 'Koodaus - Matka alkoi jo lapsena',
@@ -144,7 +144,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hobbies.modal.coding.p3': 'Muistan että jokin erityisen kiinnostava peli ei toiminut ja se harmitti kovasti. Yritin sitä lukuisia kertoja päälle, en muista mitä kaikkea yritin mutta koska olin tullut tietoiseksi siitä että tietokonetta käsketään ajattelin saman toimivan muuallakin. Yritin siis "KÄSKEÄ" peliä toimimaan esim. paukauttamalla kasettiasemaa nyrkillä juuri silloin kun peli alkaa latautua.',
     'hobbies.modal.coding.p4': 'Seuraava tietokoneeni olikin sitten Pentium 486, 33Mhz. Olin tuolloin n.11-vuotias. Olin ensimmäinen meidän luokalta jonka kotona oli tietokone. Ja itse asiassa ensimmäinen tietokone meillä oli valovuosia edellä muita vanha kunnon AMSTRAD joka oli nyt hylätty kaapin perälle. Käyttiksenä 486:ssa oli Windows 95. Naapuritalossa oli muistaakseni 386 ja siinä taas folderpohjainen käyttöliittymä, Olisikohan ollut jokin varhaisimmista Windows versioista.',
     
-    'hobbies.modal.music.title': 'Musiikki - Rakkaus soittamiseen',
+    'hobbies.modal.music.title': 'Musiikki - Omaa musiikkia YouTubessa',
     'hobbies.modal.music.p1': 'Innostuin rumpujen soitosta jo hyvin pienestä. Jo 6 vuotiaana kun äitimme nauhoitti C-kasetille puheitamme, kuuluu kuinka minä isolla äänellä: "MÄ SOITAN ROKKIA!" ja siihen perään suulla rumpututusta.',
     'hobbies.modal.music.p2': 'Haaveet musiikin soittamisesta sai kuitenkin unohtaa uskonnollisista syistä ja yleinen kiinnostus musiikkiin johti siihen että jotain instrumenttia on voitava soittaa ja niin minusta tuli hetkeksi aikaa viulisti. Viulu hommattiin minulle kun olin n. 12-vuotias. Samalla aloin käydä kerran viikossa soittotunneilla.',
     'hobbies.modal.music.p3': 'Nuoresta asti minua kiinnosti erityisesti rummut ja niiden soittaminen kuuluikin varhaisaikuisuuteen noin 8 vuoden ajan kun soittelin eri kokoonpanoissa. Noin 28-vuotiaana hankin ensimmäisen sähkökitaran ja aloin opetella soittamista vaikka monet väittävät ettei sillä iällä enää opi. Nykyään soitan kaikkia instrumentteja ja teen ja sävellän musiikkia. Tässä linkki YouTube-kanavalleni jonka olen vastikään perustanut. Minulla on noin 16 biisiä odottamassa julkaisukuntoon saattamista.',
@@ -155,10 +155,10 @@ const translations: Record<Language, Record<string, string>> = {
     'hobbies.modal.gaming.p2': 'Seuraava harppaus tuli, kun saimme Pentium 486:n 90-luvun puolivälissä. Tuo kone oli valtava edistys! Sillä pelasin jo paljon suurempia ja teknisesti vaativampia pelejä, kuten NHL-94, Doom 1-2 sekä joitain arcade pelejä, kuten Jack Jazzrabbit ym- Nämä pelit määrittelivät 90-luvun puoliskoa minulle, kuten myös muille ikäisilleni,täysin.',
     'hobbies.modal.gaming.p3': 'Nykyään pelaamisen painopiste on PS5:llä. Pelaan WRC- rallyä , Skyrimiä, Ghost of Tsutsimia. Pojan kanssa NHL, Fifa ym kaksin pelattavat pelit sekä aika ajoin pelaamme tietokoneella roblox alustalla olevia pelejä. Se yhdistää meitä ja tekee pelaamisesta yhteisen harrastuksen. Pelaaminen ei ole enää vain minun asia, vaan se on myös tapa viettää aikaa perheen kanssa ja luoda muistoja.',
     
-    'hobbies.modal.sports.title': 'Urheilu - Voimailusta kuntosaliharjoitteluun',
+    'hobbies.modal.sports.title': 'Urheilu - Kuntosalista koirailuun',
     'hobbies.modal.sports.p1': 'En ole koskaan ymmärtänyt pallopelejä. Jalkapallo, koripallo, jääkiekko - kaikki tuntui sekavalta ja en saanut otetta siitä, miten pelata tai seurata niitä. Yritin kyllä osallistua koulun liikuntatunneilla, mutta en koskaan innostunut joukkuepeleistä.',
     'hobbies.modal.sports.p2': 'Voimailu vei minut kuitenkin mukanaan. Aloitin kuntosalilla käymisen nuorena aikuisena, kun ymmärsin että voin hallita omaa kehitystäni. Painojen nostaminen tuntui loogiselta - enemmän painoa, enemmän toistoja, paremmat tulokset. Rakastan sitä, miten voin nähdä edistymisen peilistä ja mittarista.',
-    'hobbies.modal.sports.p3': 'Nykyään urheiluharrastukseni ovat jääneet lähinnä kuntosalilla käyntiin. Käyn salilla 3-4 kertaa viikossa, keskityen voimaharjoitteluun ja kehonpainoharjoituksiin. Se auttaa pitämään mielen kirkkaana koodausta varten ja antaa energiaa päivittäisiin haasteisiin. Vaikka en harrasta kilpailu-urheilua, säännöllinen harjoittelu on tärkeä osa elämäntapaani.',
+    'hobbies.modal.sports.p3': 'Nykyään säännöllinen liikunta koostuu pääosin kuntosalilla käynnistä 3-4 kertaa viikossa, keskittyen voimaharjoitteluun ja kehonpainoharjoituksiin. Lisäksi päivittäiset koiralenkit pitävät liikkeessä ja tuovat vaihtelua ulkoilmassa. Liikunta auttaa pitämään mielen kirkkaana koodausta varten ja antaa energiaa päivittäisiin haasteisiin. Vaikka kilpailu-urheilu ei kiinnosta, säännöllinen harjoittelu on tärkeä osa elämäntapaa.',
     
     'hobbies.modal.reading.title': 'Lukeminen - Matka lastenklassikoista teknisiin kirjoihin',
     'hobbies.modal.reading.p1': 'Aloin lukea paksuja, kovakantisia kirjoja heti kun osasin lukea. Ensimmäisenä luin Viisikko-sarjan kaikki kirjat - ne olivat jännittäviä seikkailuja, joissa lapset ratkoivat mysteerejä. Sitten siirryin Kolme etsivään -sarjaan, joka jatkoi samalla linjalla mutta hieman vanhemmille lukijoille.',
@@ -286,14 +286,14 @@ const translations: Record<Language, Record<string, string>> = {
     // Harrastukset
     'hobbies.title': 'Hobbies',
     'hobbies.coding': 'Coding',
-    'hobbies.codingDesc': 'In my free time, I like to try new technologies and develop my own projects. Open source projects are of particular interest.',
+    'hobbies.codingDesc': 'In my free time, I like to try new technologies and develop my own projects. When not otherwise occupied, I study coding through platforms like Udemy. Open source projects are of particular interest.',
     'hobbies.gaming': 'Gaming',
-    'hobbies.gamingDesc': 'I enjoy playing various games, especially strategy games and RPGs. Games are also a source of inspiration for my own projects.',
+    'hobbies.gamingDesc': 'I enjoy playing various games, especially shooters, sports games and racing games. Games are also a source of inspiration for my own projects.',
     'hobbies.sports': 'Sports',
-    'hobbies.sportsDesc': 'I take care of my fitness by exercising regularly. It also helps keep the mind clear for coding.',
+    'hobbies.sportsDesc': 'Utility exerciser: berry picking in autumn, year-round dog walks and gym 1-3 times per week. Exercise helps keep the mind clear for coding.',
     'hobbies.reading': 'Reading',
     'hobbies.readingDesc': 'I read a lot of technical books and articles. Learning is a continuous process and I keep myself up to date with the latest trends.',
-    'hobbies.music': 'Music',    'hobbies.musicDesc': 'Music helps me concentrate while coding. I enjoy listening to various genres in the background while programming.',
+    'hobbies.music': 'Music',    'hobbies.musicDesc': 'Passionate music enthusiast. I play multiple instruments, sing and compose my own songs. I listen to music almost constantly, and original music is available on YouTube.',
     
     // Hobbies - modals
     'hobbies.modal.coding.title': 'Coding - The Journey Started as a Child',
@@ -302,7 +302,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hobbies.modal.coding.p3': 'I remember that a particularly interesting game didn\'t work and it annoyed me a lot. I tried it numerous times, I don\'t remember everything I tried but because I had become aware that computers are commanded, I thought the same would work elsewhere. So I tried to "COMMAND" the game to work, for example by banging the cassette drive with my fist just as the game started loading.',
     'hobbies.modal.coding.p4': 'My next computer was a Pentium 486, 33Mhz. I was about 11 years old at the time. I was the first one in our class to have a computer at home. And in fact, our first computer was light years ahead of others - the good old AMSTRAD which was now abandoned in the back of a closet. The 486 ran Windows 95. I remember the neighbor had a 386 with a folder-based interface, might have been one of the earliest Windows versions.',
     
-    'hobbies.modal.music.title': 'Music - Love for Playing',
+    'hobbies.modal.music.title': 'Music - Original Music on YouTube',
     'hobbies.modal.music.p1': 'I became interested in playing drums from a very young age. When I was 6 years old and my mother recorded our speech on a C-cassette, you can hear me loudly saying: "I\'M PLAYING ROCK!" followed by drumming sounds with my mouth.',
     'hobbies.modal.music.p2': 'Dreams of playing music had to be forgotten for religious reasons, but general interest in music led to the need to play some instrument, and so I became a violinist for a while. A violin was acquired for me when I was about 12 years old. At the same time, I started taking lessons once a week.',
     'hobbies.modal.music.p3': 'From a young age, I was especially interested in drums and drum playing was part of my early adulthood for about 8 years as I played in different bands. At around 28 years old, I got my first electric guitar and started learning to play even though many claim you can\'t learn at that age anymore. Nowadays I play all instruments and compose music. Here\'s a link to my YouTube channel that I recently founded. I have about 16 songs waiting to be published.',
@@ -313,10 +313,10 @@ const translations: Record<Language, Record<string, string>> = {
     'hobbies.modal.gaming.p2': 'The next leap came when we got a Pentium 486 in the mid-90s. That machine was a huge improvement! I played much bigger and technically demanding games like NHL-94, Doom 1-2, and some arcade games like Jack Jazzrabbit, etc. These games completely defined the mid-90s for me, as they did for others my age.',
     'hobbies.modal.gaming.p3': 'Nowadays gaming focuses on PS5. I play WRC rally, Skyrim, Ghost of Tsushima. With my son, NHL, FIFA and other two-player games, and occasionally we play games on the Roblox platform. It brings us together and makes gaming a shared hobby. Gaming is no longer just my thing, but also a way to spend time with family and create memories.',
     
-    'hobbies.modal.sports.title': 'Sports - From Powerlifting to Gym Training',
+    'hobbies.modal.sports.title': 'Sports - From Gym to Dog Walking',
     'hobbies.modal.sports.p1': 'I\'ve never understood ball games. Football, basketball, ice hockey - everything seemed confusing and I couldn\'t grasp how to play or follow them. I did try to participate in school PE classes, but I never got excited about team sports.',
     'hobbies.modal.sports.p2': 'Powerlifting took me along though. I started going to the gym as a young adult when I realized I could control my own development. Lifting weights felt logical - more weight, more reps, better results. I love how I can see progress in the mirror and on the scale.',
-    'hobbies.modal.sports.p3': 'Nowadays my sports hobbies are mainly limited to gym visits. I go to the gym 3-4 times a week, focusing on strength training and bodyweight exercises. It helps keep my mind clear for coding and gives me energy for daily challenges. Although I don\'t practice competitive sports, regular exercise is an important part of my lifestyle.',
+    'hobbies.modal.sports.p3': 'Nowadays regular exercise consists mainly of gym visits 3-4 times a week, focusing on strength training and bodyweight exercises. Additionally, daily dog walks keep me active and provide variety in fresh air. Exercise helps keep the mind clear for coding and provides energy for daily challenges. Although competitive sports aren\'t of interest, regular training is an important part of lifestyle.',
     
     'hobbies.modal.reading.title': 'Reading - Journey from Children\'s Classics to Technical Books',
     'hobbies.modal.reading.p1': 'I started reading thick, hardcover books as soon as I could read. First I read all the Famous Five books - they were exciting adventures where children solved mysteries. Then I moved on to The Three Investigators series, which continued in the same vein but for slightly older readers.',
