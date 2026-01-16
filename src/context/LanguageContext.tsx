@@ -170,7 +170,32 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.technologies': 'Teknologiat',
     'projects.details': 'Tarkemmat tiedot',
     'projects.github': 'GitHub',
-    'projects.liveDemo': 'Live Demo',
+    'projects.liveDemo': 'Avaa projekti',
+    
+    'projects.region.name': 'Region.community',
+    'projects.region.desc': 'Moderni verkkosivusto, joka tarjoaa yhteisölähtöisen alustan tapahtumille ja verkostoitumiselle.',
+    'projects.region.detail1': 'Toteutettu Reactilla ja Firebase-taustalla',
+    'projects.region.detail2': 'Painotus käyttäjäystävälliseen käyttöliittymään ja yhteisön tarpeiden huomioimiseen',
+    
+    'projects.riff.name': 'RiffGenerator',
+    'projects.riff.desc': 'Työkalu musiikintekijöille. Sovellus on vielä työn alla. Toteutetaan ensin selainversiona, sen jälkeen mobiiliversiona. Ajatuksena on että kuka tahansa voisi esim. ihan hyräilemällä tuottaa ääntä, jonka sovellus muuntaa midiksi ja leikkeen voi toistaa haluamallaan instrumentilla. Hyräilemällä voi siis periaatteessa tuottaa kokonaisen kappaleen.',
+    'projects.riff.detail1': 'Selainversio toimii web-selaimessa, mobiiliversio toteutetaan React Nativella',
+    'projects.riff.detail2': 'Tarkoitus julkaista expo(eas)-pilveen',
+    'projects.riff.detail3': 'Projektissa yhdistyy luovuus, ohjelmointi ja musiikin harrastus',
+    'projects.riff.detail4': 'Sovellus on kehitysvaiheessa',
+    
+    'projects.epq.name': 'EPQ',
+    'projects.epq.desc': 'EPQ on mobiilisovellus jolla eri aloilla työskentelevät ammattilaiset voivat jakaa osaamistaan. kohdeyleisönä on vanhemmat jotka etsivät lapsilleen tukiopetusta terapiaa ym.',
+    'projects.epq.detail1': 'Mobiilisovellus Android ja iOS alustoille',
+    'projects.epq.detail2': 'Kehitetty ammattilaisten osaamisen jakamiseen',
+    'projects.epq.detail3': 'Rakennettu React Native ja Expo-teknologioilla',
+    
+    'projects.cvsite.name': 'CV-website',
+    'projects.cvsite.desc': 'Moderni CV-sivusto, joka esittelee minun taustaa, harrastuksia ja projekteja. Toteutettu Reactilla ja TypeScriptillä responsiivisella designilla.',
+    'projects.cvsite.detail1': 'Responsiivinen design joka toimii kaikilla laitteilla',
+    'projects.cvsite.detail2': 'Modaalit harrastuksien yksityiskohtaisille kuvauksille',
+    'projects.cvsite.detail3': 'Interaktiivinen projektikokoelma GitHub-linkeillä',
+    'projects.cvsite.detail4': 'Modernia CSS-tyylitystä ja käyttäjäystävällistä käyttöliittymää',
   },
   en: {
     // Header
@@ -302,6 +327,31 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.technologies': 'Technologies',
     'projects.details': 'Details',
     'projects.github': 'GitHub',
-    'projects.liveDemo': 'Live Demo',
+    'projects.liveDemo': 'Open Project',
+    
+    'projects.region.name': 'Region.community',
+    'projects.region.desc': 'A modern website that provides a community-driven platform for events and networking.',
+    'projects.region.detail1': 'Implemented with React and Firebase backend',
+    'projects.region.detail2': 'Focus on user-friendly interface and community needs',
+    
+    'projects.riff.name': 'RiffGenerator',
+    'projects.riff.desc': 'A tool for music creators. The application is still under development. First implemented as a browser version, then as a mobile version. The idea is that anyone could produce sound by humming, which the application converts to MIDI and the clip can be played with any desired instrument. So by humming, you can essentially produce an entire song.',
+    'projects.riff.detail1': 'Browser version works in web browser, mobile version will be implemented with React Native',
+    'projects.riff.detail2': 'Intended to be published to expo(eas) cloud',
+    'projects.riff.detail3': 'The project combines creativity, programming and music hobby',
+    'projects.riff.detail4': 'Application is in development',
+    
+    'projects.epq.name': 'EPQ',
+    'projects.epq.desc': 'EPQ is a mobile application where professionals working in different fields can share their expertise. The target audience is parents looking for tutoring, therapy, etc. for their children.',
+    'projects.epq.detail1': 'Mobile application for Android and iOS platforms',
+    'projects.epq.detail2': 'Developed for sharing professional expertise',
+    'projects.epq.detail3': 'Built with React Native and Expo technologies',
+    
+    'projects.cvsite.name': 'CV-website',
+    'projects.cvsite.desc': 'A modern CV website that showcases my background, hobbies and projects. Built with React and TypeScript with responsive design.',
+    'projects.cvsite.detail1': 'Responsive design that works on all devices',
+    'projects.cvsite.detail2': 'Modals for detailed hobby descriptions',
+    'projects.cvsite.detail3': 'Interactive project collection with GitHub links',
+    'projects.cvsite.detail4': 'Modern CSS styling and user-friendly interface',
   }
 };

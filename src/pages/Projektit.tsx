@@ -6,52 +6,52 @@ const Projektit = () => {
   const projects = [
     {
       id: 'region',
-      name: 'Region.community',
-      description: 'Moderni verkkosivusto, joka tarjoaa yhteisölähtöisen alustan tapahtumille ja verkostoitumiselle.',
+      name: t('projects.region.name'),
+      description: t('projects.region.desc'),
       technologies: ['React', 'Firebase', 'TypeScript', 'CSS'],
       details: [
-        'Toteutettu Reactilla ja Firebase-taustalla',
-        'Painotus käyttäjäystävälliseen käyttöliittymään ja yhteisön tarpeiden huomioimiseen'
+        t('projects.region.detail1'),
+        t('projects.region.detail2')
       ],
       live: 'https://www.region.community'
     },
     {
       id: 'riffgenerator',
-      name: 'RiffGenerator',
-      description: 'Työkalu musiikintekijöille. Sovellus on vielä työn alla. Toteutetaan ensin selainversiona, sen jälkeen mobiiliversiona. Ajatuksena on että kuka tahansa voisi esim. ihan hyräilemällä tuottaa ääntä, jonka sovellus muuntaa midiksi ja leikkeen voi toistaa haluamallaan instrumentilla. Hyräilemällä voi siis periaatteessa tuottaa kokonaisen kappaleen.',
+      name: t('projects.riff.name'),
+      description: t('projects.riff.desc'),
       technologies: ['TypeScript', 'React', 'React Native', 'Python'],
       details: [
-        'Selainversio toimii web-selaimessa, mobiiliversio toteutetaan React Nativella',
-        'Tarkoitus julkaista expo(eas)-pilveen',
-        'Projektissa yhdistyy luovuus, ohjelmointi ja musiikin harrastus',
-        'Sovellus on kehitysvaiheessa'
+        t('projects.riff.detail1'),
+        t('projects.riff.detail2'),
+        t('projects.riff.detail3'),
+        t('projects.riff.detail4')
       ],
       github: 'https://github.com/eskoTaivassalo/riffmakerapp/tree/basicViews',
       live: null
     },
     {
       id: 'epq',
-      name: 'EPQ',
-      description: 'EPQ on mobiilisovellus jolla eri aloilla työskentelevät ammattilaiset voivat jakaa osaamistaan. kohdeyleisönä on vanhemmat jotka etsivät lapsilleen tukiopetusta terapiaa ym.',
+      name: t('projects.epq.name'),
+      description: t('projects.epq.desc'),
       technologies: ['React Native', 'Js', 'Expo'],
       details: [
-        'Mobiilisovellus Android ja iOS alustoille',
-        'Kehitetty ammattilaisten osaamisen jakamiseen',
-        'Rakennettu React Native ja Expo-teknologioilla'
+        t('projects.epq.detail1'),
+        t('projects.epq.detail2'),
+        t('projects.epq.detail3')
       ],
       github: 'https://github.com/eskoTaivassalo/EPQ',
       live: null
     },
     {
       id: 'cvwebsite',
-      name: 'CV-website',
-      description: 'Moderni CV-sivusto, joka esittelee minun taustaa, harrastuksia ja projekteja. Toteutettu Reactilla ja TypeScriptillä responsiivisella designilla.',
+      name: t('projects.cvsite.name'),
+      description: t('projects.cvsite.desc'),
       technologies: ['React', 'TypeScript', 'Vite', 'CSS'],
       details: [
-        'Responsiivinen design joka toimii kaikilla laitteilla',
-        'Modaalit harrastuksien yksityiskohtaisille kuvauksille',
-        'Interaktiivinen projektikokoelma GitHub-linkeillä',
-        'Modernia CSS-tyylitystä ja käyttäjäystävällistä käyttöliittymää'
+        t('projects.cvsite.detail1'),
+        t('projects.cvsite.detail2'),
+        t('projects.cvsite.detail3'),
+        t('projects.cvsite.detail4')
       ],
       github: 'https://github.com/eskoTaivassalo/CV-website',
       live: null
