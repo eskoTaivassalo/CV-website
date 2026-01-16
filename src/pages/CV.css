@@ -351,25 +351,6 @@
   .cv-content-wrapper {
     grid-template-columns: 1fr;
   }
-
-  .profile-overlay {
-    left: 1rem;
-    top: 6.5rem;
-  }
-  
-  .overlay-profile-image {
-    width: 60px;
-    height: 60px;
-    border: 3px solid white;
-  }
-  
-  .overlay-name {
-    font-size: 1rem;
-  }
-  
-  .overlay-title {
-    font-size: 0.75rem;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
