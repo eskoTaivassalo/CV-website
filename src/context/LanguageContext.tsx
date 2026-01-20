@@ -70,7 +70,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.githubProjects': 'GitHub Projects',
     
     'cv.profile': 'Profiili',
-    'cv.profileText': 'Olen ohjelmistokehittäjä, joka on erikoistunut web- ja mobiilisovelluksiin. Taustani sisältää Python-, JavaScript- ja TypeScript-osaamista sekä kokemusta Reactin ja React Nativen käytöstä. Olen toteuttanut omia projekteja aina käyttöliittymistä kokonaisiin sovelluksiin asti, ja innostun erityisesti luomaan työkaluja ja palveluja, jotka helpottavat käyttäjien arkea. Hyödynnän GitHub Copilotia tehokkaasti kehitystyössä ja hallitsen useiden taustapalveluiden, kuten Gitin, Expon ja Firebasen, integroinnin projekteihini. Vahvuuksiani ovat itsenäinen oppiminen, ratkaisukeskeinen ote ja kyky nähdä asiat useasta näkökulmasta.',
+    'cv.profileText': 'Olen ohjelmistokehittäjä, joka on erikoistunut web- ja mobiilisovelluksiin. Taustani sisältää Python-, JavaScript- ja TypeScript-osaamista sekä kokemusta Reactin ja React Nativen käytöstä. Olen toteuttanut omia projekteja aina käyttöliittymistä kokonaisiin sovelluksiin asti, ja innostun erityisesti luomaan työkaluja ja palveluja, jotka helpottavat käyttäjien arkea. Hallitsen useiden taustapalveluiden, kuten Gitin, Expon ja Firebasen, integroinnin projekteihini ja hyödynnän moderneja kehitystyökaluja työssäni. Vahvuuksiani ovat itsenäinen oppiminen, ratkaisukeskeinen ote ja kyky nähdä asiat useasta näkökulmasta.',
     
     'cv.skills': 'Taidot',
     'cv.references': 'Suosittelijat',
@@ -89,7 +89,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.edu2.thesis': 'Lopputyöt: React-websovellus ja Pythonilla toteutettu peli.',
     'cv.edu2.desc': 'Koulutus antoi peruskäsityksen eri ohjelmistokielistä.',
     
-    'cv.edu3.title': 'Prosessinhoitajan pt',
+    'cv.edu3.title': 'Prosessinhoitajan perustutkinto',
     'cv.edu3.school': 'Edupoli, Porvoo',
     'cv.edu3.period': 'Syyskuu 2013 - Toukokuu 2016',
     'cv.edu3.desc': 'Prosessinhoitajan perustutkinto, öljynjalostus',
@@ -229,7 +229,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.githubProjects': 'GitHub Projects',
     
     'cv.profile': 'Profile',
-    'cv.profileText': 'I am a software developer specialized in web and mobile applications. My background includes Python, JavaScript, and TypeScript expertise, as well as experience with React and React Native. I have implemented my own projects from user interfaces to complete applications, and I am particularly enthusiastic about creating tools and services that make users\' everyday life easier. I effectively utilize GitHub Copilot in development work and master the integration of various backend services such as Git, Expo, and Firebase into my projects. My strengths include independent learning, solution-oriented approach, and the ability to see things from multiple perspectives.',
+    'cv.profileText': 'I am a software developer specialized in web and mobile applications. My background includes Python, JavaScript, and TypeScript expertise, as well as experience with React and React Native. I have implemented my own projects from user interfaces to complete applications, and I am particularly enthusiastic about creating tools and services that make users\' everyday life easier. I master the integration of various backend services such as Git, Expo, and Firebase into my projects and utilize modern development tools in my work. My strengths include independent learning, solution-oriented approach, and the ability to see things from multiple perspectives.',
     
     'cv.skills': 'Skills',
     'cv.references': 'References',
