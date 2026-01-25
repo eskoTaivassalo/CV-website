@@ -219,6 +219,19 @@
   background: #ffffff;
 }
 
+@media print {
+  .header,
+  .nav,
+  .nav-link,
+  .language-btn,
+  .download-btn,
+  .download-btn-top,
+  .hamburger-btn,
+  .profile-overlay {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
     background: none;

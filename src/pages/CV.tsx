@@ -1,5 +1,6 @@
 import './CV.css';
 import { useLanguage } from '../context/LanguageContext';
+import profileImage from '../assets/esko.png';
 
 const CV = () => {
   const { t } = useLanguage();
@@ -7,8 +8,9 @@ const CV = () => {
   return (
     <div className="cv-container">
       <div className="pdf-only-header">
+        <img src={profileImage} alt="Esko Taivassalo" className="pdf-profile-image" />
         <div className="pdf-header-info">
-          <h1>Esko  Taivassalo</h1>
+          <h1>Esko Taivassalo</h1>
           <p className="pdf-title">{t('cv.jobTitle')}</p>
         </div>
       </div>
@@ -113,6 +115,10 @@ const CV = () => {
             </div>
           </section>
         </main>
+      </div>
+      
+      <div className="cv-motto">
+        <p>{t('cv.motto')}</p>
       </div>
     </div>
   );

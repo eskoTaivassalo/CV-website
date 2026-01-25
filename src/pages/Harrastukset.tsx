@@ -47,8 +47,6 @@ const Harrastukset = () => {
 
   return (
     <div className="page-container">
-      <h1 className="page-title">{t('hobbies.title')}</h1>
-      
       <div className="hobbies-grid">
         {hobbies.map((hobby, index) => (
           <div 

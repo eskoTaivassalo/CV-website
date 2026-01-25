@@ -59,53 +59,56 @@ const Projektit = () => {
   ];
 
   return (
-    <div className="page-container">
-      <h1 className="page-title">{t('projects.title')}</h1>
-      
-      <div className="projects-container">
-        {projects.map((project, index) => (
-          <div key={index} id={project.id} className="project-card">
-            <h3 className="project-name">{project.name}</h3>
-            <p className="project-description">{project.description}</p>
-            
-            {project.details && (
-              <ul className="project-details">
-                {project.details.map((detail, detailIndex) => (
-                  <li key={detailIndex}>{detail}</li>
-                ))}
-              </ul>
-            )}
-            
-            <div className="project-technologies">
-              {project.technologies.map((tech, techIndex) => (
-                <span key={techIndex} className="tech-tag">{tech}</span>
-              ))}
-            </div>
-            
-            <div className="project-links">
-              {project.github && (
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="project-link github-link"
-                >
-                  <span>{t('projects.github')}</span> →
-                </a>
+    <div className="projektit-container">
+      <div className="projektit-content-wrapper">
+        <main className="projektit-main">
+          {projects.map((project, index) => (
+            <div key={index} id={project.id} className="project-section">
+              <h2>{project.name}</h2>
+              <p className="project-description">{project.description}</p>
+              
+              {project.details && (
+                <ul className="project-details">
+                  {project.details.map((detail, detailIndex) => (
+                    <li key={detailIndex}>{detail}</li>
+                  ))}
+                </ul>
               )}
-              {project.live && (
-                <a 
-                  href={project.live} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="project-link live-link"
-                >
-                  <span>{t('projects.liveDemo')}</span> →
-                </a>
-              )}
+              
+              <div className="project-technologies">
+                <strong>{t('projects.technologies')}:</strong>
+                <div className="tech-tags">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="project-links">
+                {project.github && (
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="project-link github-link"
+                  >
+                    <span>{t('projects.github')}</span> →
+                  </a>
+                )}
+                {project.live && (
+                  <a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="project-link live-link"
+                  >
+                    <span>{t('projects.liveDemo')}</span> →
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </main>
       </div>
     </div>
   );

@@ -2,6 +2,9 @@
   /* Poistetaan taustat ja gradientit tulostettaessa */
   .cv-container {
     background: white !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 0 !important;
   }
   
   .cv-header {
@@ -15,15 +18,36 @@
     color: black !important;
   }
   
-  /* Piilotetaan lataa-painike */
+  /* Piilotetaan lataa-painike, header ja profiilikuva */
   .download-btn,
-  .download-btn-top {
+  .download-btn-top,
+  .header,
+  .profile-overlay,
+  .language-btn {
     display: none !important;
   }
   
   /* Vältetään sivunvaihtoja keskellä elementtejä */
   .cv-section {
     page-break-inside: avoid;
+  }
+  
+  /* Poistetaan ylimääräinen tila sivun lopusta */
+  .cv-main .cv-section:last-child,
+  .cv-sidebar .cv-section:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  .cv-content-wrapper {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Varmistetaan ettei ylimääräisiä elementtejä näy */
+  .cv-container::after,
+  .cv-content-wrapper::after,
+  .cv-main::after,
+  .cv-sidebar::after {
+    display: none !important;
   }
 }
 .cv-container {
@@ -40,35 +64,61 @@
 
 .pdf-only-header {
   display: none;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.pdf-profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+  flex-shrink: 0;
+}
+
+.pdf-header-info h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #1a2332;
+}
+
+.pdf-title {
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+  color: #555;
+  font-style: italic;
 }
 
 @media print {
   .pdf-only-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #333;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
   }
   
   .pdf-profile-image {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #333;
+    flex-shrink: 0;
   }
   
   .pdf-header-info h1 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin: 0;
     color: #1a2332;
   }
   
   .pdf-title {
-    font-size: 1.1rem;
-    margin: 0.3rem 0 0 0;
+    font-size: 0.9rem;
+    margin: 0.2rem 0 0 0;
     color: #555;
     font-style: italic;
   }
@@ -341,6 +391,55 @@
   margin-bottom: 0.4rem;
   line-height: 1.4;
   font-size: 0.85rem;
+}
+
+.cv-motto {
+  margin-top: 2rem;
+  padding: 3rem 3rem 4rem 3rem;
+  background: linear-gradient(135deg, #8b9bb3 0%, #6b7a8f 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cv-motto::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.cv-motto::after {
+  content: '"';
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.cv-motto p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 @media (max-width: 768px) {

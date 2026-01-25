@@ -15,17 +15,53 @@ const Header = () => {
   const handleDownloadPDF = async () => {
     setIsGeneratingPDF(true);
     try {
-      // Otetaan kuvakaappaus koko sivusta, jotta fixed-elementit (profiilikuva) tulevat mukaan
-      const element = document.body;
+      // Piilotetaan header ja profiilikuva väliaikaisesti
+      const header = document.querySelector('.header') as HTMLElement;
+      const profileOverlay = document.querySelector('.profile-overlay') as HTMLElement;
+      const languageBtn = document.querySelector('.language-btn') as HTMLElement;
+      const pdfHeader = document.querySelector('.pdf-only-header') as HTMLElement;
+      const cvContainer = document.querySelector('.cv-container') as HTMLElement;
+      
+      const originalHeaderDisplay = header?.style.display || '';
+      const originalProfileDisplay = profileOverlay?.style.display || '';
+      const originalLanguageDisplay = languageBtn?.style.display || '';
+      const originalPdfHeaderDisplay = pdfHeader?.style.display || '';
+      const originalCvPaddingTop = cvContainer?.style.paddingTop || '';
+      const originalCvMinHeight = cvContainer?.style.minHeight || '';
+      const originalCvHeight = cvContainer?.style.height || '';
+      
+      if (header) header.style.display = 'none';
+      if (profileOverlay) profileOverlay.style.display = 'none';
+      if (languageBtn) languageBtn.style.display = 'none';
+      if (pdfHeader) pdfHeader.style.display = 'flex';
+      if (cvContainer) {
+        cvContainer.style.paddingTop = '0';
+        cvContainer.style.minHeight = 'auto';
+        cvContainer.style.height = 'auto';
+      }
+      
+      // Otetaan kuvakaappaus vain CV-containerista
+      const element = cvContainer;
 
       const canvas = await html2canvas(element, {
         scale: 1.5,
         useCORS: true,
         logging: false,
-        backgroundColor: '#ffffff',
-        windowWidth: 1300, // CV:n leveys
+        backgroundColor: '#e5e3df',
+        windowWidth: 1300,
         windowHeight: element.scrollHeight,
       });
+
+      // Palautetaan elementit takaisin
+      if (header) header.style.display = originalHeaderDisplay;
+      if (profileOverlay) profileOverlay.style.display = originalProfileDisplay;
+      if (languageBtn) languageBtn.style.display = originalLanguageDisplay;
+      if (pdfHeader) pdfHeader.style.display = originalPdfHeaderDisplay;
+      if (cvContainer) {
+        cvContainer.style.paddingTop = originalCvPaddingTop;
+        cvContainer.style.minHeight = originalCvMinHeight;
+        cvContainer.style.height = originalCvHeight;
+      }
 
       const imgData = canvas.toDataURL('image/jpeg', 0.7);
       

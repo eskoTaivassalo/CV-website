@@ -112,6 +112,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.work3.period': 'Syyskuu 2004 - Elokuu 2014',
     
     'cv.jobTitle': 'Ohjelmistokehittäjä',
+    'cv.motto': 'Edistymistä voi mitata prosentteina, elämää elettyinä hetkinä',
     
     // Biografia
     'bio.background': 'Taustani',
@@ -162,7 +163,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'hobbies.modal.reading.title': 'Lukeminen - Matka lastenklassikoista teknisiin kirjoihin',
     'hobbies.modal.reading.p1': 'Aloin lukea paksuja, kovakantisia kirjoja heti kun osasin lukea. Ensimmäisenä luin Viisikko-sarjan kaikki kirjat - ne olivat jännittäviä seikkailuja, joissa lapset ratkoivat mysteerejä. Sitten siirryin Kolme etsivään -sarjaan, joka jatkoi samalla linjalla mutta hieman vanhemmille lukijoille.',
-    'hobbies.modal.reading.p2': 'Tarzan-kirjasarjan kaikki kirjat olivat myös tärkeitä. Edgar Rice Burroughs\'in luomat tarinat viidakosta, eläimistä ja ihmisistä veivät minut täysin toiseen maailmaan. Luin myös muita klassikoita kuten Robin Hood, Muumit ja Asterix-sarjan.',
+    'hobbies.modal.reading.p2': 'Tarzan-kirjasarjan kaikki kirjat olivat myös tärkeitä. Edgar Rice Burroughs\'in luomat tarinat viidakosta, eläimistä ja ihmisistä veivät minut täysin toiseen maailmaan.',
     'hobbies.modal.reading.p3': 'Nykyään luen enemmän teknisiä kirjoja ja artikkeleita. Oppiminen on jatkuva prosessi ja pidän itseni ajan tasalla uusimmista trendeistä ohjelmoinnissa, teknologioissa ja muissa kiinnostavissa aiheissa. Lukeminen auttaa myös rentoutumaan ja inspiroitumaan uusista ideoista.',
     
     // Projektit
@@ -271,6 +272,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.work3.period': 'September 2004 - August 2014',
     
     'cv.jobTitle': 'Software Developer',
+    'cv.motto': 'Progress can be measured in percentages, life in moments lived',
     
     // Biografia
     'bio.background': 'My Background',
@@ -320,7 +322,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'hobbies.modal.reading.title': 'Reading - Journey from Children\'s Classics to Technical Books',
     'hobbies.modal.reading.p1': 'I started reading thick, hardcover books as soon as I could read. First I read all the Famous Five books - they were exciting adventures where children solved mysteries. Then I moved on to The Three Investigators series, which continued in the same vein but for slightly older readers.',
-    'hobbies.modal.reading.p2': 'All the Tarzan book series were also important. Edgar Rice Burroughs\' stories about the jungle, animals and people took me to a completely different world. I also read other classics like Robin Hood, Moomins and the Asterix series.',
+    'hobbies.modal.reading.p2': 'All the Tarzan book series were also important. Edgar Rice Burroughs\' stories about the jungle, animals and people took me to a completely different world. ',
     'hobbies.modal.reading.p3': 'Nowadays I read more technical books and articles. Learning is a continuous process and I keep myself up to date with the latest trends in programming, technologies and other interesting topics. Reading also helps me relax and get inspired by new ideas.',    
     // Projektit
     'projects.title': 'Projects',
