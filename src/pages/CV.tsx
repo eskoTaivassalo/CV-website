@@ -44,9 +44,9 @@ const CV = () => {
             <h2>{t('cv.projects')}</h2>
             <ul>
               <li><a href="/projektit#region">Region (www.region.community)</a></li>
-              <li><a href="/projektit#riffgenerator">RiffGenerator</a></li>
-              <li><a href="/projektit#epq">EPQ</a></li>
-              <li><a href="https://github.com/eskoTaivassalo" target="_blank" rel="noopener noreferrer">{t('cv.githubProjects')}</a></li>
+              <li><a href="/projektit#riffgenerator">RiffGenerator (GitHub)</a></li>
+              <li><a href="/projektit#epq">EPQ (GitHub)</a></li>
+              <li><a href="https://github.com/eskoTaivassalo/my-day-app" target="_blank" rel="noopener noreferrer">My Day App (GitHub)</a></li>
             </ul>
           </section>
         </aside>

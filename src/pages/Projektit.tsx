@@ -43,6 +43,19 @@ const Projektit = () => {
       live: null
     },
     {
+      id: 'mydays',
+      name: t('projects.mydays.name'),
+      description: t('projects.mydays.desc'),
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Firebase', 'React Navigation'],
+      details: [
+        t('projects.mydays.detail1'),
+        t('projects.mydays.detail2'),
+        t('projects.mydays.detail3')
+      ],
+      github: 'https://github.com/eskoTaivassalo/my-day-app',
+      live: null
+    },
+    {
       id: 'cvwebsite',
       name: t('projects.cvsite.name'),
       description: t('projects.cvsite.desc'),
@@ -92,7 +105,7 @@ const Projektit = () => {
                     rel="noopener noreferrer" 
                     className="project-link github-link"
                   >
-                    <span>{t('projects.github')}</span> →
+                    <span>{t('projects.github')} (GitHub)</span> →
                   </a>
                 )}
                 {project.live && (

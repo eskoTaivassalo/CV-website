@@ -190,6 +190,12 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.epq.detail1': 'Mobiilisovellus Android ja iOS alustoille',
     'projects.epq.detail2': 'Kehitetty ammattilaisten osaamisen jakamiseen',
     'projects.epq.detail3': 'Rakennettu React Native ja Expo-teknologioilla',
+
+    'projects.mydays.name': 'My Days App',
+    'projects.mydays.desc': 'Moderni päiväkirjasovellus, jolla tallennat päivän tapahtumat, kuvat ja muistot helposti.',
+    'projects.mydays.detail1': 'Aikajana- ja kalenterinäkymät merkintöjen selaamiseen',
+    'projects.mydays.detail2': 'Kuvien lisääminen kamerasta ja galleriasta',
+    'projects.mydays.detail3': 'Firebase-integraatio merkintöjen, kuvien ja autentikoinnin tueksi',
     
     'projects.cvsite.name': 'CV-website',
     'projects.cvsite.desc': 'Moderni CV-sivusto, joka esittelee minun taustaa, harrastuksia ja projekteja. Toteutettu Reactilla ja TypeScriptillä responsiivisella designilla.',
@@ -348,6 +354,12 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.epq.detail1': 'Mobile application for Android and iOS platforms',
     'projects.epq.detail2': 'Developed for sharing professional expertise',
     'projects.epq.detail3': 'Built with React Native and Expo technologies',
+
+    'projects.mydays.name': 'My Days App',
+    'projects.mydays.desc': 'A modern diary app to easily capture daily moments, photos and memories.',
+    'projects.mydays.detail1': 'Timeline and calendar views for browsing entries',
+    'projects.mydays.detail2': 'Add photos from camera or gallery',
+    'projects.mydays.detail3': 'Firebase integration for entries, images and authentication',
     
     'projects.cvsite.name': 'CV-website',
     'projects.cvsite.desc': 'A modern CV website that showcases my background, hobbies and projects. Built with React and TypeScript with responsive design.',
