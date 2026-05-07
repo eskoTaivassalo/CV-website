@@ -70,7 +70,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.githubProjects': 'GitHub Projects',
     
     'cv.profile': 'Profiili',
-    'cv.profileText': 'Olen ohjelmistokehittäjä, joka on erikoistunut web- ja mobiilisovelluksiin. Taustani sisältää Python-, JavaScript- ja TypeScript-osaamista sekä kokemusta Reactin ja React Nativen käytöstä. Olen toteuttanut omia projekteja aina käyttöliittymistä kokonaisiin sovelluksiin asti, ja innostun erityisesti luomaan työkaluja ja palveluja, jotka helpottavat käyttäjien arkea. Hallitsen useiden taustapalveluiden, kuten Gitin, Expon ja Firebasen, integroinnin projekteihini ja hyödynnän moderneja kehitystyökaluja työssäni. Vahvuuksiani ovat itsenäinen oppiminen, ratkaisukeskeinen ote ja kyky nähdä asiat useasta näkökulmasta.',
+    'cv.profileText': 'Olen ohjelmistokehittäjä, joka kehittää web- ja mobiilisovelluksia. Osaamistani ovat muun muassa React, React Native, JavaScript ja TypeScript. Olen ahkera ja vastuullinen työntekijä, jolla on monipuolinen tausta kiinteistöjen, teollisuuden ja rakennusalan tehtävistä. Minulla on usean vuoden kokemus huolto-, korjaus- ja kunnossapitotöistä sekä tehtävistä, joissa korostuvat oma-aloitteisuus, tarkkuus ja luotettavuus. Työskentelen luontevasti sekä itsenäisesti että osana tiimiä, ja pidän tärkeänä, että työ tehdään huolellisesti ja turvallisesti.',
     
     'cv.skills': 'Taidot',
     'cv.references': 'Suosittelijat',
@@ -172,11 +172,11 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.details': 'Tarkemmat tiedot',
     'projects.github': 'GitHub',
     'projects.liveDemo': 'Avaa projekti',
-    
-    'projects.region.name': 'Region.community',
-    'projects.region.desc': 'Moderni verkkosivusto, joka tarjoaa yhteisölähtöisen alustan tapahtumille ja verkostoitumiselle.',
-    'projects.region.detail1': 'Toteutettu Reactilla ja Firebase-taustalla',
-    'projects.region.detail2': 'Painotus käyttäjäystävälliseen käyttöliittymään ja yhteisön tarpeiden huomioimiseen',
+
+    'projects.regionb.name': 'Regionb',
+    'projects.regionb.desc': 'Moderni verkkosovellus, joka tarjoaa yhteisölähtöisen alustan tapahtumille ja verkostoitumiselle.',
+    'projects.regionb.detail1': 'Toteutettu Reactilla ja Firebase-taustalla',
+    'projects.regionb.detail2': 'Painotus käyttäjäystävälliseen käyttöliittymään ja yhteisön tarpeiden huomioimiseen',
     
     'projects.riff.name': 'RiffGenerator',
     'projects.riff.desc': 'Työkalu musiikintekijöille. Sovellus on vielä työn alla. Toteutetaan ensin selainversiona, sen jälkeen mobiiliversiona. Ajatuksena on että kuka tahansa voisi esim. ihan hyräilemällä tuottaa ääntä, jonka sovellus muuntaa midiksi ja leikkeen voi toistaa haluamallaan instrumentilla. Hyräilemällä voi siis periaatteessa tuottaa kokonaisen kappaleen.',
@@ -336,11 +336,11 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.details': 'Details',
     'projects.github': 'GitHub',
     'projects.liveDemo': 'Open Project',
-    
-    'projects.region.name': 'Region.community',
-    'projects.region.desc': 'A modern website that provides a community-driven platform for events and networking.',
-    'projects.region.detail1': 'Implemented with React and Firebase backend',
-    'projects.region.detail2': 'Focus on user-friendly interface and community needs',
+
+    'projects.regionb.name': 'Regionb',
+    'projects.regionb.desc': 'A modern web application that provides a community-driven platform for events and networking.',
+    'projects.regionb.detail1': 'Implemented with React and Firebase backend',
+    'projects.regionb.detail2': 'Focus on user-friendly interface and community needs',
     
     'projects.riff.name': 'RiffGenerator',
     'projects.riff.desc': 'A tool for music creators. The application is still under development. First implemented as a browser version, then as a mobile version. The idea is that anyone could produce sound by humming, which the application converts to MIDI and the clip can be played with any desired instrument. So by humming, you can essentially produce an entire song.',

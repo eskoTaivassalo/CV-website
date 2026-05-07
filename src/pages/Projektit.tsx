@@ -5,15 +5,16 @@ const Projektit = () => {
   const { t } = useLanguage();
   const projects = [
     {
-      id: 'region',
-      name: t('projects.region.name'),
-      description: t('projects.region.desc'),
+      id: 'regionb',
+      name: t('projects.regionb.name'),
+      description: t('projects.regionb.desc'),
       technologies: ['React', 'Firebase', 'TypeScript', 'CSS'],
       details: [
-        t('projects.region.detail1'),
-        t('projects.region.detail2')
+        t('projects.regionb.detail1'),
+        t('projects.regionb.detail2')
       ],
-      live: 'https://www.region.community'
+      github: 'https://github.com/eskoTaivassalo/regionauth.git',
+      live: null
     },
     {
       id: 'riffgenerator',

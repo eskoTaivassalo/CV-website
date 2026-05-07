@@ -43,7 +43,7 @@ const CV = () => {
           <section className="cv-section">
             <h2>{t('cv.projects')}</h2>
             <ul>
-              <li><a href="/projektit#region">Region (www.region.community)</a></li>
+              <li><a href="/projektit#regionb">Regionb (GitHub)</a></li>
               <li><a href="/projektit#riffgenerator">RiffGenerator (GitHub)</a></li>
               <li><a href="/projektit#epq">EPQ (GitHub)</a></li>
               <li><a href="https://github.com/eskoTaivassalo/my-day-app" target="_blank" rel="noopener noreferrer">My Day App (GitHub)</a></li>
