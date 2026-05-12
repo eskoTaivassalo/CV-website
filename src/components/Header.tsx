@@ -1,12 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
 import { useLanguage } from '../context/LanguageContext';
 import profileImage from '../assets/esko.png';
 import './Header.css';
-
-(pdfMake as any).vfs = (pdfFonts as any).pdfMake.vfs;
 
 const Header = () => {
   const location = useLocation();
@@ -14,9 +10,15 @@ const Header = () => {
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleDownloadPDF = () => {
+  const handleDownloadPDF = async () => {
     setIsGeneratingPDF(true);
     try {
+      // Lataa pdfmake dynaamisesti vain tarvittaessa
+      const pdfMake = (await import('pdfmake/build/pdfmake')).default;
+      const pdfFonts = (await import('pdfmake/build/vfs_fonts')).default;
+      
+      (pdfMake as any).vfs = (pdfFonts as any).pdfMake.vfs;
+      
       const docContent: any[] = [
         { text: 'ESKO TAIVASSALO', fontSize: 18, bold: true, alignment: 'center', margin: [0, 0, 0, 10] },
         { text: t('cv.jobTitle'), fontSize: 11, alignment: 'center', margin: [0, 0, 0, 20] },
