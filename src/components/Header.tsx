@@ -13,72 +13,57 @@ const Header = () => {
   const handleDownloadPDF = async () => {
     setIsGeneratingPDF(true);
     try {
-      // Lataa kirjastot dynaamisesti vain tarvittaessa
-      const html2canvas = (await import('html2canvas')).default;
-      const jsPDF = (await import('jspdf')).jsPDF;
+      // Lataa pdfmake dynaamisesti vain tarvittaessa
+      const pdfMake = (await import('pdfmake/build/pdfmake')).default;
+      const pdfFonts = (await import('pdfmake/build/vfs_fonts')).default;
       
-      // Piilotetaan header ja profiilikuva väliaikaisesti
-      const header = document.querySelector('.header') as HTMLElement;
-      const profileOverlay = document.querySelector('.profile-overlay') as HTMLElement;
-      const languageBtn = document.querySelector('.language-btn') as HTMLElement;
-      const cvContainer = document.querySelector('.cv-container') as HTMLElement;
+      (pdfMake as any).vfs = (pdfFonts as any).pdfMake.vfs;
       
-      const originalHeaderDisplay = header?.style.display || '';
-      const originalProfileDisplay = profileOverlay?.style.display || '';
-      const originalLanguageDisplay = languageBtn?.style.display || '';
-      const originalCvPaddingTop = cvContainer?.style.paddingTop || '';
-      const originalCvMinHeight = cvContainer?.style.minHeight || '';
-      const originalCvHeight = cvContainer?.style.height || '';
-      
-      if (header) header.style.display = 'none';
-      if (profileOverlay) profileOverlay.style.display = 'none';
-      if (languageBtn) languageBtn.style.display = 'none';
-      if (cvContainer) {
-        cvContainer.style.paddingTop = '0';
-        cvContainer.style.minHeight = 'auto';
-        cvContainer.style.height = 'auto';
-      }
-      
-      // Otetaan kuvakaappaus vain CV-containerista
-      const element = cvContainer;
-      if (!element) throw new Error('CV container not found');
+      const docContent: any[] = [
+        { text: 'ESKO TAIVASSALO', fontSize: 18, bold: true, alignment: 'center', margin: [0, 0, 0, 10] },
+        { text: t('cv.jobTitle'), fontSize: 11, alignment: 'center', margin: [0, 0, 0, 20] },
+        
+        // Henkilötiedot
+        { text: t('cv.personalInfo'), fontSize: 12, bold: true, margin: [0, 0, 0, 8] },
+        { text: `Puhelin: +358 (näytetään soittamalla)\nSähköposti: (saatavissa soittamalla)\nSyntymäpaikka: Toholampi, Suomi`, fontSize: 10, margin: [0, 0, 0, 15] },
+        
+        // Profiili
+        { text: t('cv.profile'), fontSize: 12, bold: true, margin: [0, 0, 0, 8] },
+        { text: t('cv.profileText'), fontSize: 10, margin: [0, 0, 0, 15], alignment: 'justify' },
+        
+        // Koulutus
+        { text: t('cv.education'), fontSize: 12, bold: true, margin: [0, 0, 0, 8] },
+        { text: `${t('cv.edu1.title')} | ${t('cv.edu1.period')}\n${t('cv.edu1.school')}\n${t('cv.edu1.desc')}`, fontSize: 10, margin: [0, 0, 0, 10] },
+        { text: `${t('cv.edu2.title')} | ${t('cv.edu2.period')}\n${t('cv.edu2.school')}\n${t('cv.edu2.studies')}\n${t('cv.edu2.thesis')}`, fontSize: 10, margin: [0, 0, 0, 10] },
+        { text: `${t('cv.edu3.title')} | ${t('cv.edu3.period')}\n${t('cv.edu3.school')}\n${t('cv.edu3.desc')}`, fontSize: 10, margin: [0, 0, 0, 10] },
+        { text: `${t('cv.edu4.title')} | ${t('cv.edu4.period')}\n${t('cv.edu4.school')}`, fontSize: 10, margin: [0, 0, 0, 15] },
+        
+        // Työkokemus
+        { text: t('cv.workExperience'), fontSize: 12, bold: true, margin: [0, 0, 0, 8] },
+        { text: `${t('cv.work1.title')} | ${t('cv.work1.period')}\n${t('cv.work1.company')}`, fontSize: 10, margin: [0, 0, 0, 10] },
+        { text: `${t('cv.work2.title')} | ${t('cv.work2.period')}\n${t('cv.work2.company')}`, fontSize: 10, margin: [0, 0, 0, 10] },
+        { text: `${t('cv.work3.title')} | ${t('cv.work3.period')}\n${t('cv.work3.company')}`, fontSize: 10, margin: [0, 0, 0, 15] },
+        
+        // Harrastukset
+        { text: t('cv.interests'), fontSize: 12, bold: true, margin: [0, 0, 0, 8] },
+        { text: `${t('cv.interest.music')}\n${t('cv.interest.gym')}`, fontSize: 10, margin: [0, 0, 0, 15] },
+      ];
 
-      const canvas = await html2canvas(element, {
-        scale: 1.5,
-        useCORS: true,
-        logging: false,
-        backgroundColor: '#e5e3df',
-        windowWidth: 1300,
-        windowHeight: element.scrollHeight,
-      });
+      const docDefinition: any = {
+        content: docContent,
+        pageSize: 'A4',
+        pageMargins: [40, 40, 40, 40],
+        defaultStyle: {
+          font: 'Helvetica',
+          size: 11,
+          lineHeight: 1.4,
+        }
+      };
 
-      // Palautetaan elementit takaisin
-      if (header) header.style.display = originalHeaderDisplay;
-      if (profileOverlay) profileOverlay.style.display = originalProfileDisplay;
-      if (languageBtn) languageBtn.style.display = originalLanguageDisplay;
-      if (cvContainer) {
-        cvContainer.style.paddingTop = originalCvPaddingTop;
-        cvContainer.style.minHeight = originalCvMinHeight;
-        cvContainer.style.height = originalCvHeight;
-      }
-
-      const imgData = canvas.toDataURL('image/jpeg', 0.7);
-      
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'mm',
-        format: 'a4',
-        compress: true
-      });
-
-      const imgWidth = 210;
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      
-      pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight, undefined, 'FAST');
-      pdf.save('Esko_Taivassalo_CV.pdf');
+      pdfMake.createPdf(docDefinition).download('Esko_Taivassalo_CV.pdf');
     } catch (error) {
       console.error('Virhe:', error);
-      alert('PDF:n luonti epäonnistui: ' + (error instanceof Error ? error.message : String(error)));
+      alert('PDF:n luonti epäonnistui.');
     } finally {
       setIsGeneratingPDF(false);
     }
