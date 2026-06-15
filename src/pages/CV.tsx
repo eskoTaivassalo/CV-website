@@ -1,6 +1,5 @@
 import './CV.css';
 import { useLanguage } from '../context/LanguageContext';
-import profileImage from '../assets/esko.png';
 
 const CV = () => {
   const { t } = useLanguage();
