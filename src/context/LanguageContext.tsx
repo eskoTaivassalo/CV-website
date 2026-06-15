@@ -50,18 +50,11 @@ const translations: Record<Language, Record<string, string>> = {
     // CV Page
     'cv.personalInfo': 'Henkilötiedot',
     'cv.name': 'Nimi',
-    'cv.address': 'Osoite',
     'cv.phone': 'Puhelin',
     'cv.email': 'Sähköposti',
     'cv.birthDate': 'Syntymäaika',
     'cv.birthPlace': 'Syntymäpaikka',
-    'cv.gender': 'Sukupuoli',
-    'cv.nationality': 'Kansallisuus',
-    'cv.maritalStatus': 'Siviilisääty',
-    'cv.driversLicense': 'Ajokortti',
-    'cv.male': 'Mies',
-    'cv.relationship': 'Avoliitossa',
-    
+    'cv.driversLicense': 'Ajokortti',    
     'cv.interests': 'Kiinnostuksen Kohteet',
     'cv.interest.music': 'Musiikki: Säveltäminen ja useiden eri instrumenttien soittaminen',
     'cv.interest.gym': 'Kuntosali',
@@ -70,11 +63,106 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.githubProjects': 'GitHub Projects',
     
     'cv.profile': 'Profiili',
-    'cv.profileText': 'Olen ohjelmistokehittäjä, joka kehittää web- ja mobiilisovelluksia. Osaamistani ovat muun muassa React, React Native, JavaScript ja TypeScript. Olen ahkera ja vastuullinen työntekijä, jolla on monipuolinen tausta kiinteistöjen, teollisuuden ja rakennusalan tehtävistä. Minulla on usean vuoden kokemus huolto-, korjaus- ja kunnossapitotöistä sekä tehtävistä, joissa korostuvat oma-aloitteisuus, tarkkuus ja luotettavuus. Työskentelen luontevasti sekä itsenäisesti että osana tiimiä, ja pidän tärkeänä, että työ tehdään huolellisesti ja turvallisesti.',
-    
+    'cv.profileText' : 
+    'Olen monipuolisen työkokemuksen omaava tekijä, jolla on taustaa teollisuudesta, prosessiteollisuudesta, logistiikasta, rakentamisesta sekä teknisistä tehtävistä. Olen työskennellyt useissa eri ympäristöissä, joissa korostuvat tarkkuus, vastuullisuus, turvallisuus ja kyky toimia osana tiimiä myös vaihtelevissa ja vaativissa olosuhteissa. Vahvinta kokemustani on prosessiteollisuudesta, jossa olen toiminut mm. piikiekkotuotannossa, öljynjalostuksessa sekä sinkkituotannossa. Lisäksi minulla on kokemusta materiaalien käsittelystä ja logistiikasta sekä teknisistä huolto- ja rakennustehtävistä. Olen kouluttautunut myös ohjelmistokehittäjäksi, ja minulla on osaamista modernista web- ja mobiilikehityksestä (React, React Native, Firebase sekä useat ohjelmointikielet kuten Python, Java ja C#). Yhdistän teknisen osaamisen ja käytännön työkokemuksen, mikä antaa hyvän pohjan sekä fyysisiin että digitaalisiin työtehtäviin. Etsin tehtäviä, joissa voin hyödyntää laaja-alaista kokemustani ja kehittyä edelleen teknisten ja ohjelmistokehityksen tehtävien parissa. ',
     'cv.skills': 'Taidot',
     'cv.references': 'Suosittelijat',
     'cv.referencesText': 'Saatavissa soittamalla puhelimitse',
+    'cv.workExperience': 'Työkokemus',
+
+    'cv.work1.title': 'Materiaalin käsittelijä',
+    'cv.work1.company': 'Adecco',
+    'cv.work1.experiencelines': 
+    'Työskentelin GXO Logistics Services Finland Oy:ssä määräaikaisena.Työn kuvaani kuului erilaisten materiaalitoimitusten vastaan ottaminen ja käsittely sekä tilausten tekeminen keskusvarastolta',    
+    'cv.work1.period': '27.10.2020 - 31.12.2021',
+
+    'cv.work2.title': 'Piikiekkojen prosessoija',
+    'cv.work2.company': 'Okmetic Oy',
+    'cv.work2.experiencelines': 
+    'Okmetic Oy:llä työskentelin piikiekkotuotannossa prosessoijana. Työtehtäviini kuului piikiekkojen skannaus, analysointi ja käsittely erilaisilla piikiekkotuotantoon kehitetyillä koneilla ja roboteilla. Työskentely vaati huolellisuutta ja tarkkuutta, ja hygienia oli erittäin tärkeä osa työtä.',
+    'cv.work2.period': '01.09.2016 - 30.08.2018',
+
+    'cv.work3.title': 'Prosessinhoitaja',
+    'cv.work3.company': 'Neste Oyj, Porvoo',
+    'cv.work3.experiencelines': 
+    'Työskentelin Neste Oyj:lla määräaikaisena kenttä operaattorina. Työtehtäviini kuului valvontakierrosten tekeminen, näytteiden otto eri puolilta prosessia ja analysointi ja käsittely laboratoriossa sekä pienten korjaustöiden tekeminen ja valvonta.',    
+    'cv.work3.period': '28.04.2015 - 31.08.2016',
+
+    'cv.work4.title': 'Prosessinhoitaja',
+    'cv.work4.company': 'Boliden Oy, Kokkola',
+    'cv.work4.period': '12.05.2014-25.08.2014',
+    'cv.work4.experiencelines': 
+    'Prosessinhoitajaopintojeni alkuvaiheessa työskentelin yhden kesän Boliden Oylla sinkkituotannossa. Tehtäviini kuului irroituskoneiden käyttö sekä prosessin valvonta ja mahdollisten häiriötilanteiden selvittäminen',
+    'cv.work5.title': 'Apukairaaja',
+    'cv.work5.company': 'Oy Kati Ab, Kalajoki',
+    'cv.work5.period': '04.02.2013 - 30.04.2013',
+    'cv.work5.experiencelines': 
+    'Katilla työskentelin apukairaajana syväkairausurakoinnissa. Työtehtäviini kuuluivat kairausputken tyhjentäminen ja näytteiden kerääminen laatikoihin ja kuljettaminen moottorikelkalla tai mönkijällä ennalta sovittuun paikkaan sekä kairauskoneen siirrossa auttaminen.',    
+    
+    'cv.work6.title': 'Tekninen eristäjä',
+    'cv.work6.company': 'Keski-Pohjanmaan lämpöeristys Oy, Kokkola',
+    'cv.work6.period': '12.9.2011-11.12.2011',
+    'cv.work6.experiencelines': 
+    'Tein teknisen eristäjän töitä saneeraus- ja uudiskrakennuskohteissa. Työtehtäviini kuului siis lähinnä putkien eristäminen, niin kylmä kuin lämpöeristystä.',    
+    
+    'cv.work7.title': 'Taksiauton kuljettaja',
+    'cv.work7.company': 'Taksijets Oy, Espoo, Kruunutaksi Oy, Vantaa, Kovanen Oy, Helsinki',
+    'cv.work7.period': '01.10.2009 - 30.08.2011',
+    'cv.work7.experiencelines': 
+    'Työtehtäviini kuului asiakkaiden kyyditseminen Helsingissä. Asakkaina oli lähinnä Kelakyytiläisiä. Lisäksi täydentävää tolppa-ajoa ja tilausjärjestelmän kautta tulevia kyytejä.',
+
+    'cv.work8.title': 'Remontti- ja kirvesmiehen työt.',
+    'cv.work8.company': 'Global Wheel Partners(GWP) Oy, Espoo',
+    'cv.work8.period': '01.10.2008-15.07.2009',
+    'cv.work8.experiencelines': 
+    'Työtehtäviini kuului mm: Kylpyhuoneiden purkamista, Ikkunoiden ja ovien huoltomaalaus, ryömintätilan aukkojen porausta, vesivahinkojen purku- ja rakennustöitä sekä omakotitalon laajennuksen aputyöt. Lisäksi sisä- ja ulkotilojen maalausta.',    
+   
+    'cv.work9.title': 'Muutto- ja haalaus',
+    'cv.work9.company': 'Teollisuusmuutot Oy, Helsinki',
+    'cv.work9.period': '12.02.2007-28.08.2008',
+    'cv.work9.experiencelines': 
+    'Teollisuusmuutot Oy:lla työskentelin erilaisissa muutto- ja haalaus projekteissa aina yksittäisistä toimistomuutoista useita kuukausia kestäneisiin tehdasmuuttoihin. Työtehtävien edellytyksenä oli turvalliset toimintatavat ja huipputekninen kalusto trukeista kurottajiin sekä erilaisiin apuvälineisiin kuten tunkkeihin, siirtorulliin ja nostureihin.',    
+    
+    'cv.work10.title': 'Varastotyöt ja keräily',
+    'cv.work10.company': 'Inex Partners Oy',
+    'cv.work10.period': '01.10.2005 - 30.09.2006',
+    'cv.work10.experiencelines': 
+    'Inexillä työskentelin tuoretuotteiden keräilyssä ja käsittelyssä ääniohjausta apuna käyttäen.',   
+
+    'cv.work11.title': 'Muutto- ja haalaus',
+    'cv.work11.company': 'Pekka Niska Oy, Helsinki',
+    'cv.work11.period': '15.04.2005-01.09.2005',
+    'cv.work11.experiencelines': 
+    'Pekka Niskalla työskentelin henkilönostimen kuljettajana ja tutustuin myös haalaus alaan. Myös nostimien huolto ja korjaus kuuluivat toimen kuvaani.',
+   
+    'cv.work12.title': 'Elintarviketyöntekijä',
+    'cv.work12.company': 'Valio Oy, Toholampi',
+    'cv.work12.period': '25.08.2004 - 03.04.2005',
+    'cv.work12.experiencelines': 
+    'Valiolla työskentelin juuston tuotannon eri prosessivaiheissa, juustomassan käsittelystä ja altaiden purkamisesta (”puskumies”) aina juuston pakkaamiseen ja varastointiin.',
+ 
+    'cv.work13.title': 'Rakennustyöntekijä',
+    'cv.work13.company': 'Major Byggteknikk as',
+    'cv.work13.period': '14.10.2003-21.11.2003 sekä 05.04.2004 - 13.08.2004',
+    'cv.work13.experiencelines': 
+    'Major Byggteknikillä ollessani tein kipsiväliseiniä sekä seinien eristystä urakka palkalla',
+   
+    'cv.work14.title': 'Remontti ja purku',
+    'cv.work14.company': 'Rivnings Spesialisten as',
+    'cv.work14.period': '16.01.2004 - 15.04.2004',
+    'cv.work14.experiencelines': 
+    'Rivnings spesialisten A/S:llä työskentelin Oslon pääkirjaston saneeraukseen liittyvissä purkutöissä',
+    
+    'cv.work115.company': 'Puukon Ky',
+    'cv.work15.title': 'Huonekalukomponenttien valmistus',
+    'cv.work15.period': '09.04.2003 - 08.08.2003',
+    'cv.work15.experiencelines': 
+    'Puukon Kylla työskentelin vaihetyöntekijänä huonekalukomponenttien sarjavalmistuksessa, mm poraus ja kokoonpano', 
+    
+    
+    
+    'cv.jobTitle': 'Ohjelmistokehittäjä',
+    'cv.motto': 'Edistymistä voi mitata prosentteina, elämää elettyinä hetkinä',
     
     'cv.education': 'Koulutus ja Pätevyydet',
     'cv.edu1.title': 'Ohjelmistokehittäjä',
@@ -97,23 +185,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.edu4.title': 'Ylioppilastutkinto',
     'cv.edu4.school': 'Toholammin lukio, Toholampi',
     'cv.edu4.period': 'Elokuu 2000 - Joulukuu 2003',
-    
-    'cv.workExperience': 'Työkokemus',
-    'cv.work1.title': 'Materiaalin käsittelijä',
-    'cv.work1.company': 'Adecco, Hamina',
-    'cv.work1.period': 'Toukokuu 2020 - Syyskuu 2021',
-    
-    'cv.work2.title': 'Prosessinhoitaja',
-    'cv.work2.company': 'Okmetic Oy & Neste Oyj, Vantaa/Porvoo',
-    'cv.work2.period': 'Huhtikuu 2015 - Elokuu 2018',
-    
-    'cv.work3.title': 'Rakennus-, tehdas- ja muuttotyöt sekä taksinkuljettajan työt',
-    'cv.work3.company': 'Useita eri työnantajia',
-    'cv.work3.period': 'Syyskuu 2004 - Elokuu 2014',
-    
-    'cv.jobTitle': 'Ohjelmistokehittäjä',
-    'cv.motto': 'Edistymistä voi mitata prosentteina, elämää elettyinä hetkinä',
-    
+
     // Biografia
     'bio.background': 'Taustani',
     'bio.backgroundText': 'Kun olin kirjoittanut ylkioppilaaksi, päädyin rakennus alalle mm. Norjaan kipsilevy urakointiin. Sieltä nuoruusajan seikkailun halu ja kiinnostus bänditoimintaan ja soittamiseen veivät minut Helsinkiin. Asuin 8 vuotta pk seudulla tehden mitä hommia milloinkin satuin saamaan, kunnes hakeuduin prosessinhoitajakoulutukseen Porvoohon. Opiskelin prosessinhoitajaksi ja tein prosessinhoitajan töitä aina vuoteen 2018 asti.',
@@ -216,17 +288,11 @@ const translations: Record<Language, Record<string, string>> = {
     // CV Page
     'cv.personalInfo': 'Personal Information',
     'cv.name': 'Name',
-    'cv.address': 'Address',
     'cv.phone': 'Phone',
     'cv.email': 'Email',
     'cv.birthDate': 'Date of Birth',
     'cv.birthPlace': 'Place of Birth',
-    'cv.gender': 'Gender',
-    'cv.nationality': 'Nationality',
-    'cv.maritalStatus': 'Marital Status',
     'cv.driversLicense': 'Driver\'s License',
-    'cv.male': 'Male',
-    'cv.relationship': 'In a relationship',
     
     'cv.interests': 'Interests',
     'cv.interest.music': 'Music: Composing and playing various instruments',
@@ -236,8 +302,7 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.githubProjects': 'GitHub Projects',
     
     'cv.profile': 'Profile',
-    'cv.profileText': 'I am a software developer specialized in web and mobile applications. My background includes Python, JavaScript, and TypeScript expertise, as well as experience with React and React Native. I have implemented my own projects from user interfaces to complete applications, and I am particularly enthusiastic about creating tools and services that make users\' everyday life easier. I master the integration of various backend services such as Git, Expo, and Firebase into my projects and utilize modern development tools in my work. My strengths include independent learning, solution-oriented approach, and the ability to see things from multiple perspectives.',
-    
+    'cv.profileText' : 'I am a versatile professional with extensive work experience in industry, process manufacturing, logistics, construction, and technical roles. I have worked in a variety of environments where precision, responsibility, safety, and the ability to work effectively as part of a team are essential, even under demanding and changing conditions. My strongest experience is in the process industry, including silicon wafer manufacturing, oil refining, and zinc production. In addition, I have experience in materials handling, logistics, technical maintenance, and construction work. I have also trained as a software developer and possess skills in modern web and mobile application development, including React, React Native, Firebase, and several programming languages such as Python, Java, and C#. I combine technical expertise with practical hands-on experience, providing a strong foundation for both physical and digital work environments. I am seeking opportunities where I can apply my broad range of experience while continuing to develop my skills in technical and software development roles. ',    
     'cv.skills': 'Skills',
     'cv.references': 'References',
     'cv.referencesText': 'Available upon request by phone',
@@ -267,16 +332,103 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.workExperience': 'Work Experience',
     'cv.work1.title': 'Material Handler',
     'cv.work1.company': 'Adecco, Hamina',
-    'cv.work1.period': 'May 2020 - September 2021',
-    
+    'cv.work1.experiencelines': 'I worked at GXO Logistics Services Finland Oy on a fixed-term contract. My responsibilities included receiving and processing material deliveries as well as placing orders with the central warehouse.',
+    'cv.work1.period' : '27.10.2020-31.12.2021',
     'cv.work2.title': 'Process Operator',
-    'cv.work2.company': 'Okmetic Oy & Neste Oyj, Vantaa/Porvoo',
-    'cv.work2.period': 'April 2015 - August 2018',
-    
-    'cv.work3.title': 'Construction, factory and moving work, and taxi driver work',
-    'cv.work3.company': 'Various employers',
-    'cv.work3.period': 'September 2004 - August 2014',
-    
+    'cv.work2.company': 'Neste Oyj, Porvoo',
+    'cv.work2.experiencelines':
+    'I was employed by Neste Oyj as a Field Operator on a fixed-term contract. My duties included carrying out field inspections, collecting process samples, analyzing and processing samples in the laboratory, and performing and overseeing minor maintenance and repair work.',
+    'cv.work2.period' : '01.09.2016 - 30.08.2018',
+
+    'cv.work3.title': 'Process Operator',
+    'cv.work3.company': 'Boliden Oy, Kokkola',
+    'cv.work3.experiencelines':
+    'At the beginning of my process operator studies, I worked for one summer at Boliden Oy in zinc production. My duties included operating separation machines, monitoring the production process, and troubleshooting possible disturbance situations.',
+    'cv.work3.period' : '28.04.2015 - 31.08.2016',
+
+    'cv.work4.title': 'Process Operator',
+    'cv.work4.company': 'Okmetic Oy',
+    'cv.work4.experiencelines':
+    'At Okmetic Oy, I worked in silicon wafer production as a process operator. My duties included scanning, analyzing, and processing silicon wafers using various machines and robots designed for wafer manufacturing. The work required precision and attention to detail, and maintaining strict hygiene standards was an essential part of the job.',
+    'cv.work4.period' : '12.05.2014-25.08.2014',
+
+    'cv.work5.title': 'Assistant driller',
+    'cv.work5.company': 'Oy Kati Ab, Kalajoki',
+    'cv.work5.experiencelines':
+    'I worked as an assistant driller in deep drilling operations at Oy Kati Ab. My duties included emptying drill rods, collecting samples into boxes, and transporting them by snowmobile or ATV to a designated location. I also assisted in relocating the drilling rig.',
+    'cv.work5.period' : '04.02.2013 - 30.04.2013',
+
+    'cv.work6.title': 'Technical Insulator',
+    'cv.work6.company': 'Keski-Pohjanmaan Lämpöeristys Oy, Kokkola',
+    'cv.work6.experiencelines':
+    'I worked as a technical insulator in renovation and new construction projects. My main duties included insulating pipes with both thermal and cold insulation materials.',
+    'cv.work6.period' : '12.9.2011-11.12.2011',
+
+    'cv.work7.title': 'Renovation and Carpentry Work',
+    'cv.work7.company': 'Global Wheel Partners (GWP) Oy, Espoo',
+    'cv.work7.experiencelines':
+    'My duties included demolition of bathrooms, maintenance painting of windows and doors, drilling access openings for crawl spaces, water damage demolition and reconstruction work, as well as assisting in a detached house extension project. In addition, I performed both interior and exterior painting work.',
+    'cv.work7.period' : '01.10.2008-15.07.2009',
+
+    'cv.work8.title': 'Taxidriver',
+    'cv.work8.company': 'Taksijets Oy, Espoo',
+    'cv.work8.experiencelines':
+    'My duties included transporting customers in Helsinki. The clients were mainly Kela transportation passengers. In addition, I drove supplementary stand-by shifts as well as rides booked through a dispatch system.',
+    'cv.work8.period' : '01.10.2008-15.07.2009',
+
+    'cv.work9.title': 'Industrial Moving and Heavy Lifting',
+    'cv.work9.company': 'Teollisuusmuutot Oy, Helsinki',
+    'cv.work9.experiencelines':
+    'I worked on various moving and heavy lifting projects at Teollisuusmuutot Oy, ranging from small office relocations to large industrial plant moves lasting several months. The work required safe working practices and the use of advanced equipment such as forklifts, telehandlers, and various lifting aids including jacks, moving rollers, and cranes.',
+    'cv.work9.period' : '12.02.2007-28.08.2008',
+
+        
+    'cv.work10.title': 'Warehouse work and order picking',
+    'cv.work10.company': 'Inex Partners Oy',
+    'cv.work10.experiencelines':
+    'I worked in the picking and handling of fresh products using voice-directed picking systems.',
+    'cv.work10.period' : '01.10.2005 - 30.09.2006',
+
+
+    'cv.work11.title': 'Industrial Moving and Heavy Lifting',
+    'cv.work11.company': 'Pekka Niska Oy',
+    'cv.work11.experiencelines':
+    'At Pekka Niska, I worked as an aerial lift operator and also gained experience in heavy lifting operations. My responsibilities also included maintenance and repair of lifting equipment.',
+    'cv.work11.period' : '15.04.2005 - 30.06.2005',
+
+    'cv.work12.title': 'Food production worker',
+    'cv.work12.company': 'Valio',
+    'cv.work12.experiencelines':
+    'At Valio, I worked in various stages of cheese production, ranging from handling and unloading cheese curd vats (“curd pushing operator”) to packaging and storing cheese products.',
+    'cv.work12.period' : '25.08.2004 - 03.04.2005',
+
+    'cv.work13.title': 'Renovation and Carpentry Work',
+    'cv.work13.company': 'Major Byggteknikk as',
+    'cv.work13.experiencelines':
+    'While working at Major Byggteknik, I installed gypsum partition walls and performed wall insulation on a piecework basis.',
+    'cv.work13.period' : '14.10.2003-21.11.2003 and 05.04.2004 - 13.08.2004',
+
+    'cv.work14.title': 'Renovation and Carpentry Work',
+    'cv.work14.company': 'Rivning spesialisten A/b',
+    'cv.work14.experiencelines':
+    'At Rivnings Spesialisten A/S, I worked on demolition work related to the renovation of the Oslo Public Library.',
+    'cv.work14.period' : '16.01.2004 - 15.04.2004',
+
+    'cv.work15.title': 'Furniture component manufacturing',
+    'cv.work15.company': 'Puukon ky',
+    'cv.work15.experiencelines':
+    'At Puukon Ky, I worked as a production worker in the serial manufacturing of furniture components, including drilling and assembly tasks.',
+    'cv.work15.period' : '09.04.2003 - 08.08.2003',
+
+
+
+
+
+
+
+
+
+
     'cv.jobTitle': 'Software Developer',
     'cv.motto': 'Progress can be measured in percentages, life in moments lived',
     

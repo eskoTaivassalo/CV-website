@@ -1,463 +1,182 @@
-@media print {
-  /* Poistetaan taustat ja gradientit tulostettaessa */
-  .cv-container {
-    background: white !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    min-height: 0 !important;
-  }
-  
-  .cv-header {
-    background: white !important;
-    color: black !important;
-    border: 1px solid #333 !important;
-  }
-  
-  .skill-tag {
-    background: #ddd !important;
-    color: black !important;
-  }
-  
-  /* Piilotetaan lataa-painike, header ja profiilikuva */
-  .download-btn,
-  .download-btn-top,
-  .header,
-  .profile-overlay,
-  .language-btn {
-    display: none !important;
-  }
-  
-  /* Vältetään sivunvaihtoja keskellä elementtejä */
-  .cv-section {
-    page-break-inside: avoid;
-  }
-  
-  /* Poistetaan ylimääräinen tila sivun lopusta */
-  .cv-main .cv-section:last-child,
-  .cv-sidebar .cv-section:last-child {
-    margin-bottom: 0 !important;
-  }
-  
-  .cv-content-wrapper {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Varmistetaan ettei ylimääräisiä elementtejä näy */
-  .cv-container::after,
-  .cv-content-wrapper::after,
-  .cv-main::after,
-  .cv-sidebar::after {
-    display: none !important;
-  }
-}
+/* CV.css */
+
 .cv-container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1rem;
-  background: #e5e3df;
-  min-height: 100vh;
-  position: relative;
-  padding-top: 4rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2d2d2d;
-}
-
-.pdf-only-header {
-  display: none;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
-
-.pdf-profile-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #333;
-  flex-shrink: 0;
-}
-
-.pdf-header-info h1 {
-  font-size: 1.3rem;
-  margin: 0;
-  color: #1a2332;
-}
-
-.pdf-title {
-  font-size: 0.9rem;
-  margin: 0.2rem 0 0 0;
-  color: #555;
-  font-style: italic;
-}
-
-@media print {
-  .pdf-only-header {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .pdf-profile-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #333;
-    flex-shrink: 0;
-  }
-  
-  .pdf-header-info h1 {
-    font-size: 1.3rem;
-    margin: 0;
-    color: #1a2332;
-  }
-  
-  .pdf-title {
-    font-size: 0.9rem;
-    margin: 0.2rem 0 0 0;
-    color: #555;
-    font-style: italic;
-  }
+font-size: 13px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+font-family: "Segoe UI", Arial, sans-serif;
+color: #2d3748;
+background: #f7fafc;
+line-height: 1.6;
 }
 
 .cv-content-wrapper {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 1.5rem;
-  align-items: start;
+display: grid;
+grid-template-columns: 280px 1fr;
+gap: 1rem;
 }
 
 .cv-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+background: white;
+border-radius: 12px;
+padding: 1.5rem;
+height: fit-content;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .cv-main {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+display: flex;
+flex-direction: column;
+gap: 1.rem;
 }
 
-.cv-main .cv-section h2 {
-  font-size: 1.3rem;
+.cv-section,
+.cv-profileSection {
+background: white;
+border-radius: 12px;
+padding: 1.rem;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.cv-main .cv-section p {
-  font-size: 1.05rem;
-  line-height: 1.5;
-}
-
-.cv-main .cv-section li {
-  font-size: 1rem;
-}
-
-.cv-header {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background: linear-gradient(to right, #8b9bb3, #1a1a1a);
-  color: white;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  position: relative;
-  transition: background 1.5s ease;
-}
-
-.cv-header:hover {
-  background: linear-gradient(to right, #a8b5c7, #3a3a3a);
-}
-
-.profile-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  flex-shrink: 0;
-}
-
-.header-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.cv-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.title {
-  font-size: 1rem;
-  opacity: 0.9;
-  margin: 0;
-}
-
-.download-btn {
-  background: #000000;
-  color: white;
-  border: 2px solid #000000;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-}
-
-.download-btn:hover:not(:disabled) {
-  background: #d4af37;
-  border-color: #d4af37;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.4);
-}
-
-.download-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.cv-section {
-  margin-bottom: 0.8rem;
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.cv-section h2 {
-  color: #555;
-  border-bottom: 2px solid #555;
-  padding-bottom: 0.3rem;
-  margin-bottom: 0.6rem;
-  font-size: 1.1rem;
-}
-
-.cv-section p {
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-  font-size: 0.9rem;
-}
-
-.cv-section ul {
-  margin: 0.5rem 0;
-  padding-left: 1.2rem;
-}
-
-.cv-section li {
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  font-size: 0.85rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+.cv-section h2,
+.cv-profileSection h2 {
+margin-top: 0;
+margin-bottom: 1rem;
+padding-bottom: 0.5rem;
+border-bottom: 3px solid #2563eb;
+color: #1e293b;
+font-size: 1.4rem;
 }
 
 .contact-info p {
-  font-size: 0.8rem;
-  margin: 0.1rem 0;
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-}
-
-.skill-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.2rem 0;
-}
-
-.skill-name {
-  font-weight: 500;
-  font-size: 0.8rem;
-  flex: 1;
-}
-
-.skill-level {
-  display: flex;
-  gap: 0.2rem;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #e0e0e0;
-}
-
-.dot.filled {
-  background: #1a2332;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.skill-category h3 {
-  color: #764ba2;
-  margin-bottom: 1rem;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-.skill-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-weight: 500;
+margin: 0.5rem 0;
+word-break: break-word;
 }
 
 .experience-item,
-.education-item,
-.project-item {
-  margin-bottom: 1.2rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid #e0e0e0;
+.education-item {
+margin-bottom: 2rem;
+padding-bottom: 1.5rem;
+border-bottom: 1px solid #e2e8f0;
 }
 
 .experience-item:last-child,
-.education-item:last-child,
-.project-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0.5rem;
+.education-item:last-child {
+border-bottom: none;
+margin-bottom: 0;
 }
 
 .experience-item h3,
-.education-item h3,
-.project-item h3 {
-  color: #555;
-  margin-bottom: 0.3rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  line-height: 1.3;
+.education-item h3 {
+margin: 0;
+color: #1e293b;
+font-size: 1.1rem;
 }
 
 .company,
 .school {
-  color: #555;
-  font-weight: 500;
-  margin-bottom: 0.15rem;
-  font-size: 0.8rem;
-  line-height: 1.3;
+margin: 0.25rem 0;
+font-weight: 600;
+color: #2563eb;
 }
 
 .period {
-  color: #777;
-  font-style: italic;
-  margin-bottom: 0;
-  font-size: 0.75rem;
+font-size: 0.9rem;
+color: #64748b;
+margin-bottom: 0.75rem;
 }
 
-.experience-item ul,
-.project-item ul {
-  margin-left: 1.2rem;
-  margin-top: 0.3rem;
+.experiencelines {
+margin-top: 0.5rem;
+white-space: pre-line;
 }
 
-.experience-item li,
-.project-item li {
-  margin-bottom: 0.2rem;
-  line-height: 1.3;
-  font-size: 0.85rem;
-}
-
-.project-item p {
-  margin-bottom: 0.4rem;
-  line-height: 1.4;
-  font-size: 0.85rem;
+.cv-profileSection p {
+margin: 0;
+text-align: justify;
 }
 
 .cv-motto {
-  margin-top: 2rem;
-  padding: 3rem 3rem 4rem 3rem;
-  background: linear-gradient(135deg, #8b9bb3 0%, #6b7a8f 100%);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  min-height: 150px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+margin-top: 2rem;
+text-align: center;
+font-style: italic;
+color: #64748b;
 }
 
-.cv-motto::before {
-  content: '"';
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  font-size: 8rem;
-  color: rgba(255, 255, 255, 0.1);
-  font-family: Georgia, serif;
-  line-height: 1;
+.pdf-only-header {
+display: flex;
+align-items: center;
+gap: 1.5rem;
+background: white;
+padding: 1.5rem;
+margin-bottom: 2rem;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.cv-motto::after {
-  content: '"';
-  position: absolute;
-  bottom: -40px;
-  right: 20px;
-  font-size: 8rem;
-  color: rgba(255, 255, 255, 0.1);
-  font-family: Georgia, serif;
-  line-height: 1;
+.pdf-profile-image {
+width: 140px;
+height: 140px;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #2563eb;
 }
 
-.cv-motto p {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.95);
-  margin: 0;
-  font-weight: 400;
-  line-height: 1.8;
-  position: relative;
-  z-index: 1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  letter-spacing: 0.5px;
-  font-family: Georgia, 'Times New Roman', serif;
+.pdf-header-info h1 {
+margin: 0;
+font-size: 2.2rem;
+color: #1e293b;
 }
 
-@media (max-width: 768px) {
-  .cv-container {
-    padding-top: 1rem;
-  }
-
-  .cv-content-wrapper {
-    grid-template-columns: 1fr;
-  }
+.pdf-title {
+margin-top: 0.5rem;
+font-size: 1.1rem;
+color: #2563eb;
+font-weight: 600;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .cv-content-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
+/* Tulostus */
 
-  .cv-right-sidebar {
-    grid-column: 1 / -1;
-  }
+@media print {
+.cv-container {
+max-width: none;
+padding: 0;
+background: white;
+}
+
+.cv-section,
+.cv-profileSection,
+.cv-sidebar,
+.pdf-only-header {
+box-shadow: none;
+border: 1px solid #ddd;
+}
+
+.experience-item,
+.education-item {
+page-break-inside: avoid;
+}
+}
+
+/* Mobiili */
+
+@media (max-width: 900px) {
+.cv-content-wrapper {
+grid-template-columns: 1fr;
+}
+
+.pdf-only-header {
+flex-direction: column;
+text-align: center;
+}
+
+.pdf-profile-image {
+width: 120px;
+height: 120px;
+}
+
+.cv-container {
+padding: 1rem;
+}
 }
