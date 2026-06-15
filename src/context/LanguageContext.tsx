@@ -181,6 +181,10 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.edu4.title': 'Ylioppilastutkinto',
     'cv.edu4.school': 'Toholammin lukio, Toholampi',
     'cv.edu4.period': 'Elokuu 2000 - Joulukuu 2003',
+        
+    'cv.edu6.title': 'Lvi-asentajan perustutkinto',
+    'cv.edu6.school': 'Taitaja, kouvola',
+    'cv.edu6.period': '2019-2020',
 
     'cv.edu5.title': 'Ajokorttiluokka: AB',
 
@@ -324,6 +328,10 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.edu4.school': 'Toholampi High School, Toholampi',
     'cv.edu4.period': 'August 2000 - December 2003',
 
+    'cv.edu6.title': 'Vocational Qualification in HVAC Installation',
+    'cv.edu6.school': 'Taitaja, Kouvola',
+    'cv.edu6.period': '2019–2020',
+
       
     'cv.edu5.title': 'Ajokortti',
     
@@ -427,7 +435,6 @@ const translations: Record<Language, Record<string, string>> = {
 
 
 
-    'cv.jobTitle': 'Software Developer',
     'cv.motto': 'Progress can be measured in percentages, life in moments lived',
     
     // Biografia

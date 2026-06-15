@@ -7,12 +7,7 @@ const CV = () => {
 
   return (
     <div className="cv-container">
-      <div className="pdf-only-header">
-        <img src={profileImage} alt="Esko Taivassalo" className="pdf-profile-image" />
-        <div className="pdf-header-info">
-          <h1>Esko Taivassalo</h1>
-        </div>
-      </div>
+   
 
       <div className="cv-content-wrapper">
         <aside className="cv-sidebar">
@@ -131,6 +126,12 @@ const CV = () => {
             </div>
 
             <div className="education-item">
+              <h3>{t('cv.edu6.title')}</h3>
+              <p className="school">{t('cv.edu6.school')}</p>
+              <p className="period">{t('cv.edu6.period')}</p>
+             </div>
+            
+            <div className="education-item">
               <h3>{t('cv.edu2.title')}</h3>
               <p className="school">{t('cv.edu2.school')}</p>
               <p className="period">{t('cv.edu2.period')}</p>
@@ -151,6 +152,8 @@ const CV = () => {
               <p className="school">{t('cv.edu4.school')}</p>
               <p className="period">{t('cv.edu4.period')}</p>
             </div>
+
+      
 
             <div className="education-item">
               <h3>{t('cv.edu5.title')}</h3>
