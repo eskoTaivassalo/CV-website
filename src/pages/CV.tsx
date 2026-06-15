@@ -11,7 +11,6 @@ const CV = () => {
         <img src={profileImage} alt="Esko Taivassalo" className="pdf-profile-image" />
         <div className="pdf-header-info">
           <h1>Esko Taivassalo</h1>
-          <p className="pdf-title">{t('cv.jobTitle')}</p>
         </div>
       </div>
 
@@ -23,9 +22,6 @@ const CV = () => {
               <p><strong>{t('cv.name')}:</strong> Esko Taivassalo</p>
               <p><strong>{t('cv.phone')}:</strong> 0413172320</p>
               <p><strong>{t('cv.email')}:</strong> esko.taivassalo@gmail.com</p>
-              <p><strong>{t('cv.birthDate')}:</strong> 16.07.1984</p>
-              <p><strong>{t('cv.birthPlace')}:</strong> Toholampi</p>
-              <p><strong>{t('cv.driversLicense')}:</strong> A, B</p>
             </div>
           </section>
         </aside>
@@ -42,99 +38,85 @@ const CV = () => {
             <h2>{t('cv.workExperience')}</h2>
 
             <div className="experience-item">
-              <h3>{t('cv.work1.title')}</h3>
-              <p className="company">{t('cv.work1.company')}</p>
+              <h3>{t('cv.work1.title')} - <span className="company">{t('cv.work1.company')}</span></h3>
               <p className="experiencelines">{t('cv.work1.experiencelines')}</p>
               <p className="period">{t('cv.work1.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work2.title')}</h3>
-              <p className="company">{t('cv.work2.company')}</p>
+              <h3>{t('cv.work2.title')} - <span className="company">{t('cv.work2.company')}</span></h3>
               <p className="experiencelines">{t('cv.work2.experiencelines')}</p>
               <p className="period">{t('cv.work2.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work3.title')}</h3>
-              <p className="company">{t('cv.work3.company')}</p>
+              <h3>{t('cv.work3.title')} - <span className="company">{t('cv.work3.company')}</span></h3>
               <p className="experiencelines">{t('cv.work3.experiencelines')}</p>
               <p className="period">{t('cv.work3.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work4.title')}</h3>
-              <p className="company">{t('cv.work4.company')}</p>
+              <h3>{t('cv.work4.title')} - <span className="company">{t('cv.work4.company')}</span></h3>
               <p className="experiencelines">{t('cv.work4.experiencelines')}</p>
               <p className="period">{t('cv.work4.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work5.title')}</h3>
-              <p className="company">{t('cv.work5.company')}</p>
+              <h3>{t('cv.work5.title')} - <span className="company">{t('cv.work5.company')}</span></h3>
               <p className="experiencelines">{t('cv.work5.experiencelines')}</p>
               <p className="period">{t('cv.work5.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work6.title')}</h3>
-              <p className="company">{t('cv.work6.company')}</p>
+              <h3>{t('cv.work6.title')} - <span className="company">{t('cv.work6.company')}</span></h3>
               <p className="experiencelines">{t('cv.work6.experiencelines')}</p>
               <p className="period">{t('cv.work6.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work7.title')}</h3>
-              <p className="company">{t('cv.work7.company')}</p>
+              <h3>{t('cv.work7.title')} - <span className="company">{t('cv.work7.company')}</span></h3>
               <p className="experiencelines">{t('cv.work7.experiencelines')}</p>
               <p className="period">{t('cv.work7.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work8.title')}</h3>
-              <p className="company">{t('cv.work8.company')}</p>
+              <h3>{t('cv.work8.title')} - <span className="company">{t('cv.work8.company')}</span></h3>
               <p className="experiencelines">{t('cv.work8.experiencelines')}</p>
               <p className="period">{t('cv.work8.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work9.title')}</h3>
-              <p className="company">{t('cv.work9.company')}</p>
+              <h3>{t('cv.work9.title')} - <span className="company">{t('cv.work9.company')}</span></h3>
               <p className="experiencelines">{t('cv.work9.experiencelines')}</p>
               <p className="period">{t('cv.work9.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work10.title')}</h3>
-              <p className="company">{t('cv.work10.company')}</p>
+              <h3>{t('cv.work10.title')} - <span className="company">{t('cv.work10.company')}</span></h3>
               <p className="experiencelines">{t('cv.work10.experiencelines')}</p>
               <p className="period">{t('cv.work10.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work11.title')}</h3>
-              <p className="company">{t('cv.work11.company')}</p>
+              <h3>{t('cv.work11.title')} - <span className="company">{t('cv.work11.company')}</span></h3>
               <p className="experiencelines">{t('cv.work11.experiencelines')}</p>
               <p className="period">{t('cv.work11.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work12.title')}</h3>
-              <p className="company">{t('cv.work12.company')}</p>
+              <h3>{t('cv.work12.title')} - <span className="company">{t('cv.work12.company')}</span></h3>
               <p className="experiencelines">{t('cv.work12.experiencelines')}</p>
               <p className="period">{t('cv.work12.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work13.title')}</h3>
-              <p className="company">{t('cv.work13.company')}</p>
+              <h3>{t('cv.work13.title')} - <span className="company">{t('cv.work13.company')}</span></h3>
               <p className="experiencelines">{t('cv.work13.experiencelines')}</p>
               <p className="period">{t('cv.work13.period')}</p>
             </div>
 
             <div className="experience-item">
-              <h3>{t('cv.work14.title')}</h3>
-              <p className="company">{t('cv.work14.company')}</p>
+              <h3>{t('cv.work14.title')} - <span className="company">{t('cv.work14.company')}</span></h3>
               <p className="experiencelines">{t('cv.work14.experiencelines')}</p>
               <p className="period">{t('cv.work14.period')}</p>
             </div>

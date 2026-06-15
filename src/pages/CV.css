@@ -1,7 +1,6 @@
 /* CV.css */
 
 .cv-container {
-font-size: 13px;
 max-width: 1200px;
 margin: 0 auto;
 padding: 2rem;
@@ -14,7 +13,7 @@ line-height: 1.6;
 .cv-content-wrapper {
 display: grid;
 grid-template-columns: 280px 1fr;
-gap: 1rem;
+gap: 2rem;
 }
 
 .cv-sidebar {
@@ -28,14 +27,14 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 .cv-main {
 display: flex;
 flex-direction: column;
-gap: 1.rem;
+gap: 1.5rem;
 }
 
 .cv-section,
 .cv-profileSection {
 background: white;
 border-radius: 12px;
-padding: 1.rem;
+padding: 1.5rem;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 

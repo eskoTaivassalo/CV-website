@@ -52,9 +52,6 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.name': 'Nimi',
     'cv.phone': 'Puhelin',
     'cv.email': 'Sähköposti',
-    'cv.birthDate': 'Syntymäaika',
-    'cv.birthPlace': 'Syntymäpaikka',
-    'cv.driversLicense': 'Ajokortti',    
     'cv.interests': 'Kiinnostuksen Kohteet',
     'cv.interest.music': 'Musiikki: Säveltäminen ja useiden eri instrumenttien soittaminen',
     'cv.interest.gym': 'Kuntosali',
@@ -161,7 +158,6 @@ const translations: Record<Language, Record<string, string>> = {
     
     
     
-    'cv.jobTitle': 'Ohjelmistokehittäjä',
     'cv.motto': 'Edistymistä voi mitata prosentteina, elämää elettyinä hetkinä',
     
     'cv.education': 'Koulutus ja Pätevyydet',
@@ -290,9 +286,6 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.name': 'Name',
     'cv.phone': 'Phone',
     'cv.email': 'Email',
-    'cv.birthDate': 'Date of Birth',
-    'cv.birthPlace': 'Place of Birth',
-    'cv.driversLicense': 'Driver\'s License',
     
     'cv.interests': 'Interests',
     'cv.interest.music': 'Music: Composing and playing various instruments',
