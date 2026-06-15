@@ -152,6 +152,11 @@ const CV = () => {
               <p className="period">{t('cv.edu4.period')}</p>
             </div>
 
+            <div className="education-item">
+              <h3>{t('cv.edu5.title')}</h3>
+            </div>
+
+
 
           </section>
         </main>

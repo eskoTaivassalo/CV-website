@@ -182,6 +182,8 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.edu4.school': 'Toholammin lukio, Toholampi',
     'cv.edu4.period': 'Elokuu 2000 - Joulukuu 2003',
 
+    'cv.edu5.title': 'Ajokorttiluokka: AB',
+
     // Biografia
     'bio.background': 'Taustani',
     'bio.backgroundText': 'Kun olin kirjoittanut ylkioppilaaksi, päädyin rakennus alalle mm. Norjaan kipsilevy urakointiin. Sieltä nuoruusajan seikkailun halu ja kiinnostus bänditoimintaan ja soittamiseen veivät minut Helsinkiin. Asuin 8 vuotta pk seudulla tehden mitä hommia milloinkin satuin saamaan, kunnes hakeuduin prosessinhoitajakoulutukseen Porvoohon. Opiskelin prosessinhoitajaksi ja tein prosessinhoitajan töitä aina vuoteen 2018 asti.',
@@ -321,6 +323,9 @@ const translations: Record<Language, Record<string, string>> = {
     'cv.edu4.title': 'Matriculation Examination',
     'cv.edu4.school': 'Toholampi High School, Toholampi',
     'cv.edu4.period': 'August 2000 - December 2003',
+
+      
+    'cv.edu5.title': 'Ajokortti',
     
     'cv.workExperience': 'Work Experience',
     'cv.work1.title': 'Material Handler',
