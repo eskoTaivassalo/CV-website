@@ -94,9 +94,7 @@ const Header = () => {
     <>
       <div className="profile-overlay">
         <img src={profileImage} alt="Esko Taivassalo" className="overlay-profile-image" />
-        <div className="overlay-info">
-          <h1 className="overlay-name">Esko Taivassalo</h1>
-        </div>
+     
       </div>
       
       <header className="header">
